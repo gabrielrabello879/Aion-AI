@@ -4,6 +4,12 @@ Plataforma web de inteligência artificial e automação desenvolvida para auxil
 
 A Aion AI foi criada com o objetivo de aplicar inteligência artificial a problemas reais de negócios, oferecendo uma estrutura moderna, escalável e preparada para evolução contínua.
 
+## 🌐 Demonstração Online
+
+A plataforma está disponível para demonstração através do GitHub Pages:
+
+👉 [Acessar Aion AI](https://gabrielrabello879.github.io/Aion-AI/)
+
 ## 🚀 Funcionalidades
 
 ### 🤖 Inteligência Artificial
