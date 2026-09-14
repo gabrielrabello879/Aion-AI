@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Aion AI</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body class="dashboard-body">
+
+
+    <div class="dashboard-layout">
+
+
+        <!-- =====================================================
+             SIDEBAR
+        ====================================================== -->
+
+        <aside class="sidebar" id="sidebar">
+
+
+            <div class="sidebar-top">
+
+
+                <a href="index.html" class="logo">
+
+                    <span class="logo-symbol">
+                        A
+                    </span>
+
+                    <span class="logo-name">
+                        Aion<span>AI</span>
+                    </span>
+
+                </a>
+
+
+                <button type="button" class="sidebar-close" id="sidebar-close" aria-label="Fechar menu">
+                    ✕
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 EMPRESA
+            ================================================== -->
+
+            <div class="company-card">
+
+
+                <div class="company-avatar" id="company-avatar">
+                    --
+                </div>
+
+
+                <div>
+
+                    <strong id="company-name">
+                        Carregando...
+                    </strong>
+
+                    <span id="company-plan">
+                        —
+                    </span>
+
+                </div>
+
+
+                <button type="button">
+                    ⋮
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 NAVEGAÇÃO
+            ================================================== -->
+
+            <nav class="sidebar-nav">
+
+
+                <span class="sidebar-label">
+                    PRINCIPAL
+                </span>
+
+
+                <a href="dashboard.html" class="active">
+
+                    <span class="nav-icon">
+                        ⌂
+                    </span>
+
+                    Dashboard
+
+                </a>
+
+
+                <a href="chat.html">
+
+                    <span class="nav-icon">
+                        ◉
+                    </span>
+
+                    Atendimentos
+
+                </a>
+
+
+                <a href="conhecimento.html">
+
+                    <span class="nav-icon">
+                        ◇
+                    </span>
+
+                    Base de conhecimento
+
+                </a>
+
+
+                <a href="configuracoes.html">
+
+                    <span class="nav-icon">
+                        ✦
+                    </span>
+
+                    Configurar IA
+
+                </a>
+
+
+
+                <span class="sidebar-label sidebar-label-space">
+                    GERENCIAMENTO
+                </span>
+
+
+                <a href="historico.html">
+
+                    <span class="nav-icon">
+                        ◷
+                    </span>
+
+                    Histórico
+
+                </a>
+
+
+                <a href="configuracoes-gerais.html">
+
+                    <span class="nav-icon">
+                        ⚙
+                    </span>
+
+                    Configurações
+
+                </a>
+
+
+            </nav>
+
+
+
+            <!-- =================================================
+                 STATUS
+            ================================================== -->
+
+            <div class="sidebar-status">
+
+
+                <div class="sidebar-status-header">
+
+                    <span>
+                        Status do sistema
+                    </span>
+
+                    <span class="system-online">
+                        Autenticado
+                    </span>
+
+                </div>
+
+
+
+                <div class="sidebar-status-item">
+
+
+                    <div>
+
+                        <span class="status-circle"></span>
+
+                        Inteligência Artificial
+
+                    </div>
+
+
+                    <strong>
+                        Aguardando configuração
+                    </strong>
+
+
+                </div>
+
+
+
+                <div class="sidebar-status-item">
+
+
+                    <div>
+
+                        <span class="status-circle"></span>
+
+                        WhatsApp
+
+                    </div>
+
+
+                    <strong>
+                        Não conectado
+                    </strong>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 USUÁRIO
+            ================================================== -->
+
+            <div class="sidebar-user">
+
+
+                <div class="user-avatar" id="sidebar-user-avatar">
+                    --
+                </div>
+
+
+                <div>
+
+                    <strong id="sidebar-user-name">
+                        Carregando...
+                    </strong>
+
+                    <span id="sidebar-user-role">
+                        —
+                    </span>
+
+                </div>
+
+
+                <button type="button" id="logout-button" title="Sair" aria-label="Sair da conta" style="
+                        background: none;
+                        border: none;
+                        color: inherit;
+                        cursor: pointer;
+                        font-size: 18px;
+                    ">
+                    ↗
+                </button>
+
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- =====================================================
+             CONTEÚDO PRINCIPAL
+        ====================================================== -->
+
+        <main class="dashboard-main">
+
+
+            <!-- =================================================
+                 HEADER
+            ================================================== -->
+
+            <header class="dashboard-header">
+
+
+                <div class="dashboard-header-left">
+
+
+                    <button type="button" class="sidebar-open" id="sidebar-open" aria-label="Abrir menu">
+                        ☰
+                    </button>
+
+
+                    <div>
+
+                        <h1>
+                            Dashboard
+                        </h1>
+
+                        <p>
+                            Acompanhe o desempenho do seu assistente.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="dashboard-header-actions">
+
+
+                    <div class="live-status">
+
+                        <span></span>
+
+                        Conta conectada
+
+                    </div>
+
+
+                    <button type="button" class="notification-button" aria-label="Notificações">
+                        ♢
+                    </button>
+
+
+                    <div class="header-avatar" id="header-user-avatar">
+                        --
+                    </div>
+
+
+                </div>
+
+
+            </header>
+
+
+
+            <!-- =================================================
+                 CONTEÚDO INTERNO
+            ================================================== -->
+
+            <div class="dashboard-content">
+
+
+                <!-- =================================================
+                     BOAS-VINDAS
+                ================================================== -->
+
+                <section class="dashboard-welcome">
+
+
+                    <div>
+
+
+                        <span class="dashboard-date" id="dashboard-date">
+                            Hoje
+                        </span>
+
+
+                        <h2 id="welcome-title">
+                            Bem-vindo.
+                        </h2>
+
+
+                        <p>
+                            Aqui estará o resumo dos seus atendimentos.
+                        </p>
+
+
+                    </div>
+
+
+                    <a href="chat.html" class="button">
+
+                        Ver atendimentos
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+
+                </section>
+
+
+
+                <!-- =================================================
+                     MÉTRICAS
+                ================================================== -->
+
+                <section class="metrics-grid">
+
+
+                    <article class="metric-card">
+
+
+                        <div class="metric-top">
+
+                            <span class="metric-icon">
+                                ◉
+                            </span>
+
+                        </div>
+
+
+                        <span class="metric-label">
+                            ATENDIMENTOS HOJE
+                        </span>
+
+
+                        <strong class="metric-number">
+                            —
+                        </strong>
+
+
+                        <p>
+                            Aguardando atendimentos
+                        </p>
+
+
+                    </article>
+
+
+
+                    <article class="metric-card">
+
+
+                        <div class="metric-top">
+
+                            <span class="metric-icon">
+                                ✦
+                            </span>
+
+                        </div>
+
+
+                        <span class="metric-label">
+                            RESOLVIDOS PELA IA
+                        </span>
+
+
+                        <strong class="metric-number">
+                            —
+                        </strong>
+
+
+                        <p>
+                            Sem dados ainda
+                        </p>
+
+
+                    </article>
+
+
+
+                    <article class="metric-card">
+
+
+                        <div class="metric-top">
+
+                            <span class="metric-icon">
+                                ◎
+                            </span>
+
+                        </div>
+
+
+                        <span class="metric-label">
+                            TRANSFERIDOS
+                        </span>
+
+
+                        <strong class="metric-number">
+                            —
+                        </strong>
+
+
+                        <p>
+                            Sem dados ainda
+                        </p>
+
+
+                    </article>
+
+
+
+                    <article class="metric-card">
+
+
+                        <div class="metric-top">
+
+                            <span class="metric-icon">
+                                ⚡
+                            </span>
+
+                        </div>
+
+
+                        <span class="metric-label">
+                            TEMPO DE RESPOSTA
+                        </span>
+
+
+                        <strong class="metric-number">
+                            —
+                        </strong>
+
+
+                        <p>
+                            Sem dados ainda
+                        </p>
+
+
+                    </article>
+
+
+                </section>
+
+
+
+                <!-- =================================================
+                     GRÁFICO + ASSISTENTE
+                ================================================== -->
+
+                <section class="dashboard-grid-large">
+
+
+                    <!-- =============================================
+                         GRÁFICO
+                    ============================================== -->
+
+                    <article class="dashboard-panel chart-panel">
+
+
+                        <div class="panel-header">
+
+
+                            <div>
+
+                                <h3>
+                                    Atendimentos
+                                </h3>
+
+                                <p>
+                                    Volume de conversas ao longo do tempo.
+                                </p>
+
+                            </div>
+
+
+                            <select id="chart-period">
+
+                                <option>
+                                    Últimos 7 dias
+                                </option>
+
+                                <option>
+                                    Últimos 30 dias
+                                </option>
+
+                            </select>
+
+
+                        </div>
+
+
+
+                        <div class="chart-summary">
+
+
+                            <strong>
+                                —
+                            </strong>
+
+
+                            <span>
+                                Dados disponíveis após os primeiros atendimentos
+                            </span>
+
+
+                        </div>
+
+
+
+                        <div class="dashboard-chart">
+
+
+                            <div class="chart-y-axis">
+
+                                <span>—</span>
+                                <span>—</span>
+                                <span>—</span>
+                                <span>—</span>
+
+                            </div>
+
+
+
+                            <div class="chart-area">
+
+
+                                <div class="chart-lines">
+
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+
+                                </div>
+
+
+
+                                <div class="chart-bars">
+
+
+                                    <div class="chart-column">
+
+                                        <div style="height: 4%;"></div>
+
+                                        <span>
+                                            Seg
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="chart-column">
+
+                                        <div style="height: 4%;"></div>
+
+                                        <span>
+                                            Ter
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="chart-column">
+
+                                        <div style="height: 4%;"></div>
+
+                                        <span>
+                                            Qua
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="chart-column">
+
+                                        <div style="height: 4%;"></div>
+
+                                        <span>
+                                            Qui
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="chart-column">
+
+                                        <div style="height: 4%;"></div>
+
+                                        <span>
+                                            Sex
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="chart-column">
+
+                                        <div style="height: 4%;"></div>
+
+                                        <span>
+                                            Sáb
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="chart-column current">
+
+                                        <div style="height: 4%;"></div>
+
+                                        <span>
+                                            Hoje
+                                        </span>
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </article>
+
+
+
+                    <!-- =============================================
+                         ASSISTENTE
+                    ============================================== -->
+
+                    <article class="dashboard-panel assistant-panel">
+
+
+                        <div class="panel-header">
+
+
+                            <div>
+
+                                <h3>
+                                    Seu assistente
+                                </h3>
+
+                                <p>
+                                    Configuração da Aion.
+                                </p>
+
+                            </div>
+
+
+                            <a href="configuracoes.html">
+                                Configurar
+                            </a>
+
+
+                        </div>
+
+
+
+                        <div class="assistant-profile">
+
+
+                            <div class="assistant-big-avatar">
+
+                                AI
+
+                            </div>
+
+
+                            <div>
+
+                                <strong>
+                                    Aion
+                                </strong>
+
+                                <span>
+                                    Assistente virtual
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="assistant-status-list">
+
+
+                            <div>
+
+                                <span>
+                                    Status
+                                </span>
+
+                                <strong>
+                                    Configuração pendente
+                                </strong>
+
+                            </div>
+
+
+
+                            <div>
+
+                                <span>
+                                    WhatsApp
+                                </span>
+
+                                <strong>
+                                    Não conectado
+                                </strong>
+
+                            </div>
+
+
+
+                            <div>
+
+                                <span>
+                                    Base de conhecimento
+                                </span>
+
+                                <strong>
+                                    Disponível
+                                </strong>
+
+                            </div>
+
+
+
+                            <div>
+
+                                <span>
+                                    Última atualização
+                                </span>
+
+                                <strong>
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <a href="configuracoes.html" class="assistant-config-button">
+                            ✦ Personalizar assistente
+                        </a>
+
+
+                    </article>
+
+
+                </section>
+
+
+
+                <!-- =================================================
+                     CONVERSAS + ASSUNTOS
+                ================================================== -->
+
+                <section class="dashboard-grid-bottom">
+
+
+                    <!-- =============================================
+                         CONVERSAS
+                    ============================================== -->
+
+                    <article class="dashboard-panel conversations-panel">
+
+
+                        <div class="panel-header">
+
+
+                            <div>
+
+                                <h3>
+                                    Conversas recentes
+                                </h3>
+
+                                <p>
+                                    Últimos atendimentos realizados.
+                                </p>
+
+                            </div>
+
+
+                            <a href="historico.html">
+                                Ver todas →
+                            </a>
+
+
+                        </div>
+
+
+
+                        <div class="conversation-list">
+
+
+                            <div class="conversation">
+
+
+                                <div class="conversation-avatar">
+                                    AI
+                                </div>
+
+
+                                <div class="conversation-info">
+
+
+                                    <div>
+
+                                        <strong>
+                                            Nenhuma conversa registrada
+                                        </strong>
+
+                                    </div>
+
+
+                                    <p>
+                                        Os atendimentos aparecerão aqui automaticamente.
+                                    </p>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </article>
+
+
+
+                    <!-- =============================================
+                         ASSUNTOS
+                    ============================================== -->
+
+                    <article class="dashboard-panel topics-panel">
+
+
+                        <div class="panel-header">
+
+
+                            <div>
+
+                                <h3>
+                                    Principais assuntos
+                                </h3>
+
+                                <p>
+                                    Temas mais frequentes dos atendimentos.
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="topic-list">
+
+
+                            <div class="topic">
+
+
+                                <div class="topic-header">
+
+                                    <span>
+                                        Preços e serviços
+                                    </span>
+
+                                    <strong>
+                                        —
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="topic-bar">
+
+                                    <span style="width: 0;"></span>
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <div class="topic">
+
+
+                                <div class="topic-header">
+
+                                    <span>
+                                        Horários
+                                    </span>
+
+                                    <strong>
+                                        —
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="topic-bar">
+
+                                    <span style="width: 0;"></span>
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <div class="topic">
+
+
+                                <div class="topic-header">
+
+                                    <span>
+                                        Agendamentos
+                                    </span>
+
+                                    <strong>
+                                        —
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="topic-bar">
+
+                                    <span style="width: 0;"></span>
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <div class="topic">
+
+
+                                <div class="topic-header">
+
+                                    <span>
+                                        Localização
+                                    </span>
+
+                                    <strong>
+                                        —
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="topic-bar">
+
+                                    <span style="width: 0;"></span>
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <div class="topic">
+
+
+                                <div class="topic-header">
+
+                                    <span>
+                                        Outros
+                                    </span>
+
+                                    <strong>
+                                        —
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="topic-bar">
+
+                                    <span style="width: 0;"></span>
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </article>
+
+
+                </section>
+
+
+            </div>
+
+
+        </main>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         OVERLAY MOBILE
+    ====================================================== -->
+
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script type="module" src="../javascript/dashboard.js"></script>
+
+
+</body>
+
+</html>

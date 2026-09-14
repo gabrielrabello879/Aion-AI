@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Atendimentos | Aion AI</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="../css/chat.css">
+
+</head>
+
+
+<body class="dashboard-body">
+
+    <div class="dashboard-layout">
+
+
+        <!-- =====================================================
+             SIDEBAR
+        ====================================================== -->
+
+        <aside class="sidebar" id="sidebar">
+
+
+            <div class="sidebar-top">
+
+                <a href="index.html" class="logo">
+
+                    <span class="logo-symbol">
+                        A
+                    </span>
+
+                    <span class="logo-name">
+                        Aion<span>AI</span>
+                    </span>
+
+                </a>
+
+
+                <button type="button" class="sidebar-close" id="sidebar-close" aria-label="Fechar menu">
+                    ✕
+                </button>
+
+            </div>
+
+
+
+            <!-- EMPRESA -->
+
+            <div class="company-card">
+
+                <div class="company-avatar">
+                    GB
+                </div>
+
+                <div>
+
+                    <strong>
+                        GB Digital
+                    </strong>
+
+                    <span>
+                        Professional
+                    </span>
+
+                </div>
+
+                <button type="button" aria-label="Mais opções">
+                    ⋮
+                </button>
+
+            </div>
+
+
+
+            <!-- NAVEGAÇÃO -->
+
+            <nav class="sidebar-nav">
+
+
+                <span class="sidebar-label">
+                    PRINCIPAL
+                </span>
+
+
+                <a href="dashboard.html">
+
+                    <span class="nav-icon">
+                        ⌂
+                    </span>
+
+                    Dashboard
+
+                </a>
+
+
+                <a href="chat.html" class="active">
+
+                    <span class="nav-icon">
+                        ◉
+                    </span>
+
+                    Atendimentos
+
+                </a>
+
+
+                <a href="conhecimento.html">
+
+                    <span class="nav-icon">
+                        ◇
+                    </span>
+
+                    Base de conhecimento
+
+                </a>
+
+
+                <a href="configuracoes.html">
+
+                    <span class="nav-icon">
+                        ✦
+                    </span>
+
+                    Configurar IA
+
+                </a>
+
+
+
+                <span class="sidebar-label sidebar-label-space">
+                    GERENCIAMENTO
+                </span>
+
+
+                <a href="historico.html">
+
+                    <span class="nav-icon">
+                        ◷
+                    </span>
+
+                    Histórico
+
+                </a>
+
+
+                <a href="configuracoes-gerais.html">
+
+                    <span class="nav-icon">
+                        ⚙
+                    </span>
+
+                    Configurações
+
+                </a>
+
+
+            </nav>
+
+
+
+            <!-- STATUS -->
+
+            <div class="sidebar-status">
+
+
+                <div class="sidebar-status-header">
+
+                    <span>
+                        Status do sistema
+                    </span>
+
+                    <span class="system-online">
+                        Online
+                    </span>
+
+                </div>
+
+
+
+                <div class="sidebar-status-item">
+
+                    <div>
+
+                        <span class="status-circle green"></span>
+
+                        Inteligência Artificial
+
+                    </div>
+
+                    <strong>
+                        Ativa
+                    </strong>
+
+                </div>
+
+
+
+                <div class="sidebar-status-item">
+
+                    <div>
+
+                        <span class="status-circle green"></span>
+
+                        WhatsApp
+
+                    </div>
+
+                    <strong>
+                        Aguardando integração
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- USUÁRIO -->
+
+            <div class="sidebar-user">
+
+                <div class="user-avatar">
+                    GR
+                </div>
+
+                <div>
+
+                    <strong>
+                        Gabriel
+                    </strong>
+
+                    <span>
+                        Administrador
+                    </span>
+
+                </div>
+
+                <a href="login.html" title="Sair">
+                    ↗
+                </a>
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- =====================================================
+             CONTEÚDO
+        ====================================================== -->
+
+        <main class="dashboard-main chat-dashboard-main">
+
+
+            <!-- HEADER -->
+
+            <header class="dashboard-header">
+
+
+                <div class="dashboard-header-left">
+
+
+                    <button type="button" class="sidebar-open" id="sidebar-open" aria-label="Abrir menu">
+                        ☰
+                    </button>
+
+
+                    <div>
+
+                        <h1>
+                            Atendimentos
+                        </h1>
+
+                        <p>
+                            Acompanhe as conversas da Aion AI em tempo real.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="dashboard-header-actions">
+
+
+                    <div class="live-status">
+
+                        <span></span>
+
+                        Aguardando integração
+
+                    </div>
+
+
+                    <div class="header-avatar">
+                        GR
+                    </div>
+
+
+                </div>
+
+
+            </header>
+
+
+
+            <!-- =====================================================
+                 ÁREA DO ATENDIMENTO
+            ====================================================== -->
+
+            <section class="support-workspace">
+
+
+                <!-- =====================================================
+                     LISTA DE CONVERSAS
+                ====================================================== -->
+
+                <aside class="conversation-sidebar">
+
+
+                    <div class="conversation-sidebar-header">
+
+
+                        <div>
+
+                            <h2>
+                                Conversas
+                            </h2>
+
+                            <span>
+                                Nenhuma em atendimento
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                    <!-- NOVA CONVERSA DE TESTE -->
+
+                    <button type="button" class="new-test-conversation-button" id="new-test-conversation-button">
+                        <span>＋</span>
+                        Nova conversa de teste
+                    </button>
+
+
+
+                    <!-- BUSCA -->
+
+                    <div class="conversation-search">
+
+                        <span>
+                            ⌕
+                        </span>
+
+                        <input type="text" id="conversation-search" placeholder="Buscar conversa..." autocomplete="off">
+
+                    </div>
+
+
+
+                    <!-- FILTROS -->
+
+                    <div class="conversation-filters">
+
+
+                        <button type="button" class="active" data-filter="all">
+                            Todas
+                        </button>
+
+
+                        <button type="button" data-filter="ai">
+                            IA
+                        </button>
+
+
+                        <button type="button" data-filter="human">
+                            Humano
+                        </button>
+
+
+                    </div>
+
+
+
+                    <!-- LISTA -->
+
+                    <div class="support-conversation-list" id="support-conversation-list">
+
+
+                        <!-- ESTADO VAZIO -->
+
+                        <div style="
+                                min-height: 300px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 30px 20px;
+                                text-align: center;
+                            ">
+
+
+                            <div>
+
+
+                                <div style="
+                                        width: 48px;
+                                        height: 48px;
+                                        margin: 0 auto 14px;
+                                        display: grid;
+                                        place-items: center;
+                                        border-radius: 13px;
+                                        background: rgba(126, 104, 255, 0.08);
+                                        color: #8c7cff;
+                                        font-size: 20px;
+                                    ">
+                                    ◉
+                                </div>
+
+
+                                <strong style="
+                                        display: block;
+                                        margin-bottom: 7px;
+                                        color: #e5e7ee;
+                                        font-size: 12px;
+                                    ">
+                                    Nenhuma conversa
+                                </strong>
+
+
+                                <p style="
+                                        margin: 0;
+                                        color: #737b8e;
+                                        font-size: 10px;
+                                        line-height: 1.6;
+                                    ">
+                                    Novos atendimentos aparecerão
+                                    automaticamente aqui.
+                                </p>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </aside>
+
+
+
+                <!-- =====================================================
+                     CONVERSA
+                ====================================================== -->
+
+                <section class="support-chat">
+
+
+                    <!-- CABEÇALHO -->
+
+                    <header class="support-chat-header">
+
+
+                        <div class="support-client">
+
+
+                            <div class="support-avatar client-large">
+                                —
+                            </div>
+
+
+                            <div>
+
+
+                                <div class="client-name-row">
+
+                                    <h3 id="active-client-name">
+                                        Nenhuma conversa selecionada
+                                    </h3>
+
+                                </div>
+
+
+                                <p>
+                                    Selecione um atendimento para visualizar
+                                </p>
+
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="chat-header-actions">
+
+
+                            <div class="ai-control">
+
+
+                                <span>
+                                    ✦
+                                </span>
+
+
+                                <div>
+
+                                    <strong>
+                                        Aion AI
+                                    </strong>
+
+                                    <small>
+                                        Aguardando atendimento
+                                    </small>
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <div class="chat-attendance-actions">
+
+                                <button type="button" class="takeover-button" id="takeover-button" disabled>
+                                    Assumir atendimento
+                                </button>
+
+                                <button type="button" class="finish-conversation-button" id="finish-conversation-button"
+                                    title="Finalizar atendimento">
+                                    Finalizar
+                                </button>
+
+                            </div>
+
+
+                    </header>
+
+
+
+                    <!-- =====================================================
+                         MENSAGENS
+                    ====================================================== -->
+
+                    <div class="support-messages" id="support-messages">
+
+
+                        <div style="
+                                min-height: 430px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 40px;
+                                text-align: center;
+                            ">
+
+
+                            <div>
+
+
+                                <div style="
+                                        width: 60px;
+                                        height: 60px;
+                                        margin: 0 auto 18px;
+                                        display: grid;
+                                        place-items: center;
+                                        border-radius: 16px;
+                                        background: rgba(126, 104, 255, 0.08);
+                                        color: #9283ff;
+                                        font-size: 25px;
+                                    ">
+                                    ✦
+                                </div>
+
+
+                                <strong style="
+                                        display: block;
+                                        margin-bottom: 8px;
+                                        color: #e9ebf2;
+                                        font-size: 15px;
+                                    ">
+                                    Nenhum atendimento aberto
+                                </strong>
+
+
+                                <p style="
+                                        max-width: 420px;
+                                        margin: 0 auto;
+                                        color: #737b8e;
+                                        font-size: 11px;
+                                        line-height: 1.7;
+                                    ">
+                                    Quando um cliente iniciar uma conversa,
+                                    as mensagens serão exibidas aqui em
+                                    tempo real.
+                                </p>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- =====================================================
+                         CAMPO DE MENSAGEM
+                    ====================================================== -->
+
+                    <footer class="support-composer">
+
+
+                        <div class="ai-answering-notice" id="ai-answering-notice">
+
+                            <span>
+                                ✦
+                            </span>
+
+                            Aguardando uma conversa.
+
+                        </div>
+
+
+
+                        <div class="composer-area">
+
+
+                            <button type="button" class="composer-action" title="Anexar" disabled>
+                                +
+                            </button>
+
+
+                            <textarea id="message-input" rows="1"
+                                placeholder="Selecione um atendimento para enviar uma mensagem..." disabled></textarea>
+
+
+                            <button type="button" class="send-message-button" id="send-message-button" disabled>
+                                ➤
+                            </button>
+
+
+                        </div>
+
+
+                    </footer>
+
+
+                </section>
+
+
+
+                <!-- =====================================================
+                     DETALHES DO CLIENTE
+                ====================================================== -->
+
+                <aside class="client-details">
+
+
+                    <!-- PERFIL -->
+
+                    <div class="client-profile">
+
+
+                        <div class="client-profile-avatar">
+                            —
+                        </div>
+
+
+                        <h3 id="details-client-name">
+                            Nenhum cliente
+                        </h3>
+
+
+                        <span>
+                            Aguardando atendimento
+                        </span>
+
+
+                    </div>
+
+
+
+                    <!-- CONTATO -->
+
+                    <div class="client-detail-section">
+
+
+                        <h4>
+                            CONTATO
+                        </h4>
+
+
+                        <div class="client-detail-item">
+                            <span>
+                                Contato
+                            </span>
+
+                            <strong id="client-contact">
+                                —
+                            </strong>
+                        </div>
+
+
+                        <div class="client-detail-item">
+                            <span>
+                                Primeiro contato
+                            </span>
+
+                            <strong id="client-first-contact">
+                                —
+                            </strong>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- ATENDIMENTO -->
+
+                    <div class="client-detail-section">
+
+
+                        <h4>
+                            ATENDIMENTO
+                        </h4>
+
+
+                        <div class="client-detail-item">
+                            <span>
+                                Responsável
+                            </span>
+
+                            <strong id="responsible-agent">
+                                —
+                            </strong>
+                        </div>
+
+
+                        <div class="client-detail-item">
+                            <span>
+                                Status
+                            </span>
+
+                            <strong id="client-status">
+                                —
+                            </strong>
+                        </div>
+
+
+                        <div class="client-detail-item">
+                            <span>
+                                Canal
+                            </span>
+
+                            <strong id="client-channel">
+                                —
+                            </strong>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- INTERESSE -->
+
+                    <div class="client-detail-section">
+
+
+                        <h4>
+                            INTERESSE IDENTIFICADO
+                        </h4>
+
+
+                        <div class="interest-tag" id="identified-interest">
+                            —
+                        </div>
+
+                        <p class="interest-description" id="identified-interest-description">
+                            Aguardando identificação durante a conversa.
+                        </p>
+
+
+                    </div>
+
+
+
+                    <!-- RESUMO -->
+
+                    <div class="client-ai-summary">
+
+
+                        <div>
+
+                            <span>
+                                ✦
+                            </span>
+
+                            <strong>
+                                Resumo da IA
+                            </strong>
+
+                        </div>
+
+
+                        <p id="ai-summary">
+                            Aguardando informações suficientes para gerar um resumo.
+                        </p>
+
+
+                    </div>
+
+
+                </aside>
+
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+
+
+    <!-- OVERLAY MOBILE -->
+
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+
+
+    <!-- SCRIPTS -->
+
+    <script src="../javascript/dashboard.js"></script>
+
+    <script type="module" src="../javascript/chat.js"></script>
+
+    <script type="module" src="../javascript/auth-guard.js"></script>
+
+</body>
+
+</html>

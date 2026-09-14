@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Histórico | Aion AI</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="../css/historico.css">
+
+</head>
+
+
+<body class="dashboard-body">
+
+    <div class="dashboard-layout">
+
+
+        <!-- =====================================================
+             SIDEBAR
+        ====================================================== -->
+
+        <aside class="sidebar" id="sidebar">
+
+
+            <div class="sidebar-top">
+
+                <a href="index.html" class="logo">
+
+                    <span class="logo-symbol">
+                        A
+                    </span>
+
+                    <span class="logo-name">
+                        Aion<span>AI</span>
+                    </span>
+
+                </a>
+
+
+                <button type="button" class="sidebar-close" id="sidebar-close" aria-label="Fechar menu">
+                    ✕
+                </button>
+
+            </div>
+
+
+
+            <!-- EMPRESA -->
+
+            <div class="company-card">
+
+                <div class="company-avatar">
+                    GB
+                </div>
+
+                <div>
+
+                    <strong>
+                        GB Digital
+                    </strong>
+
+                    <span>
+                        Professional
+                    </span>
+
+                </div>
+
+                <button type="button" aria-label="Mais opções">
+                    ⋮
+                </button>
+
+            </div>
+
+
+
+            <!-- NAVEGAÇÃO -->
+
+            <nav class="sidebar-nav">
+
+
+                <span class="sidebar-label">
+                    PRINCIPAL
+                </span>
+
+
+                <a href="dashboard.html">
+
+                    <span class="nav-icon">
+                        ⌂
+                    </span>
+
+                    Dashboard
+
+                </a>
+
+
+                <a href="chat.html">
+
+                    <span class="nav-icon">
+                        ◉
+                    </span>
+
+                    Atendimentos
+
+                </a>
+
+
+                <a href="conhecimento.html">
+
+                    <span class="nav-icon">
+                        ◇
+                    </span>
+
+                    Base de conhecimento
+
+                </a>
+
+
+                <a href="configuracoes.html">
+
+                    <span class="nav-icon">
+                        ✦
+                    </span>
+
+                    Configurar IA
+
+                </a>
+
+
+
+                <span class="sidebar-label sidebar-label-space">
+                    GERENCIAMENTO
+                </span>
+
+
+                <a href="historico.html" class="active">
+
+                    <span class="nav-icon">
+                        ◷
+                    </span>
+
+                    Histórico
+
+                </a>
+
+
+                <a href="configuracoes-gerais.html">
+
+                    <span class="nav-icon">
+                        ⚙
+                    </span>
+
+                    Configurações
+
+                </a>
+
+
+            </nav>
+
+
+
+            <!-- STATUS -->
+
+            <div class="sidebar-status">
+
+
+                <div class="sidebar-status-header">
+
+                    <span>
+                        Status do sistema
+                    </span>
+
+                    <span class="system-online">
+                        Online
+                    </span>
+
+                </div>
+
+
+
+                <div class="sidebar-status-item">
+
+                    <div>
+
+                        <span class="status-circle green"></span>
+
+                        Inteligência Artificial
+
+                    </div>
+
+                    <strong>
+                        Ativa
+                    </strong>
+
+                </div>
+
+
+
+                <div class="sidebar-status-item">
+
+                    <div>
+
+                        <span class="status-circle green"></span>
+
+                        WhatsApp
+
+                    </div>
+
+                    <strong>
+                        Conectado
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- USUÁRIO -->
+
+            <div class="sidebar-user">
+
+                <div class="user-avatar">
+                    GR
+                </div>
+
+                <div>
+
+                    <strong>
+                        Gabriel
+                    </strong>
+
+                    <span>
+                        Administrador
+                    </span>
+
+                </div>
+
+                <a href="login.html" title="Sair">
+                    ↗
+                </a>
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- =====================================================
+             CONTEÚDO
+        ====================================================== -->
+
+        <main class="dashboard-main">
+
+
+            <!-- HEADER -->
+
+            <header class="dashboard-header">
+
+
+                <div class="dashboard-header-left">
+
+
+                    <button type="button" class="sidebar-open" id="sidebar-open" aria-label="Abrir menu">
+                        ☰
+                    </button>
+
+
+                    <div>
+
+                        <h1>
+                            Histórico
+                        </h1>
+
+                        <p>
+                            Consulte todos os atendimentos realizados.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="dashboard-header-actions">
+
+
+                    <div class="live-status">
+
+                        <span></span>
+
+                        Sistema operacional
+
+                    </div>
+
+
+                    <div class="header-avatar">
+                        GR
+                    </div>
+
+
+                </div>
+
+
+            </header>
+
+
+
+            <!-- =====================================================
+                 PÁGINA
+            ====================================================== -->
+
+            <section class="history-page">
+
+
+                <!-- HERO -->
+
+                <div class="history-hero">
+
+
+                    <div>
+
+
+                        <span class="history-label">
+                            HISTÓRICO DE ATENDIMENTOS
+                        </span>
+
+
+                        <h2>
+                            Todas as conversas em um só lugar.
+                        </h2>
+
+
+                        <p>
+                            Consulte atendimentos anteriores,
+                            acompanhe quem respondeu e visualize
+                            o resumo das conversas.
+                        </p>
+
+
+                    </div>
+
+
+
+                    <button type="button" class="history-export" id="history-export">
+                        ↓ Exportar relatório
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- =====================================================
+                     MÉTRICAS
+                ====================================================== -->
+
+                <div class="history-metrics">
+
+
+                    <!-- TOTAL -->
+
+                    <article class="history-metric">
+
+
+                        <div class="history-metric-top">
+
+                            <span class="history-metric-icon">
+                                ◉
+                            </span>
+
+                        </div>
+
+
+                        <strong>
+                            —
+                        </strong>
+
+
+                        <span>
+                            Atendimentos totais
+                        </span>
+
+
+                    </article>
+
+
+
+                    <!-- IA -->
+
+                    <article class="history-metric">
+
+
+                        <div class="history-metric-top">
+
+                            <span class="history-metric-icon">
+                                ✦
+                            </span>
+
+                        </div>
+
+
+                        <strong>
+                            —
+                        </strong>
+
+
+                        <span>
+                            Resolvidos pela IA
+                        </span>
+
+
+                    </article>
+
+
+
+                    <!-- HUMANO -->
+
+                    <article class="history-metric">
+
+
+                        <div class="history-metric-top">
+
+                            <span class="history-metric-icon">
+                                ↗
+                            </span>
+
+                        </div>
+
+
+                        <strong>
+                            —
+                        </strong>
+
+
+                        <span>
+                            Transferidos para humano
+                        </span>
+
+
+                    </article>
+
+
+
+                    <!-- TEMPO -->
+
+                    <article class="history-metric">
+
+
+                        <div class="history-metric-top">
+
+                            <span class="history-metric-icon">
+                                ◷
+                            </span>
+
+                        </div>
+
+
+                        <strong>
+                            —
+                        </strong>
+
+
+                        <span>
+                            Tempo médio de resposta
+                        </span>
+
+
+                    </article>
+
+
+                </div>
+
+
+
+                <!-- =====================================================
+                     HISTÓRICO
+                ====================================================== -->
+
+                <article class="history-card">
+
+
+                    <!-- FERRAMENTAS -->
+
+                    <div class="history-toolbar">
+
+
+                        <div class="history-search">
+
+                            <span>
+                                ⌕
+                            </span>
+
+                            <input type="text" id="history-search" placeholder="Buscar cliente..." autocomplete="off">
+
+                        </div>
+
+
+
+                        <div class="history-filters">
+
+
+                            <select id="history-responsible-filter">
+
+                                <option value="all">
+                                    Todos os responsáveis
+                                </option>
+
+                                <option value="ai">
+                                    Aion AI
+                                </option>
+
+                                <option value="human">
+                                    Humano
+                                </option>
+
+                            </select>
+
+
+
+                            <select id="history-status-filter">
+
+                                <option value="all">
+                                    Todos os status
+                                </option>
+
+                                <option value="ai">
+                                    Em atendimento pela IA
+                                </option>
+
+                                <option value="human">
+                                    Atendimento humano
+                                </option>
+
+                                <option value="finished">
+                                    Finalizado
+                                </option>
+
+                                <option value="transferred">
+                                    Transferido
+                                </option>
+
+                            </select>
+
+
+
+                            <select id="history-period-filter">
+
+                                <option value="30">
+                                    Últimos 30 dias
+                                </option>
+
+                                <option value="7">
+                                    Últimos 7 dias
+                                </option>
+
+                                <option value="today">
+                                    Hoje
+                                </option>
+
+                            </select>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- =====================================================
+                         TABELA
+                    ====================================================== -->
+
+                    <div class="history-table-wrapper">
+
+
+                        <table class="history-table">
+
+
+                            <thead>
+
+
+                                <tr>
+
+                                    <th>
+                                        CLIENTE
+                                    </th>
+
+                                    <th>
+                                        DATA
+                                    </th>
+
+                                    <th>
+                                        RESPONSÁVEL
+                                    </th>
+
+                                    <th>
+                                        STATUS
+                                    </th>
+
+                                    <th>
+                                        DURAÇÃO
+                                    </th>
+
+                                    <th>
+                                        CANAL
+                                    </th>
+
+                                    <th>
+                                        AÇÃO
+                                    </th>
+
+                                </tr>
+
+
+                            </thead>
+
+
+
+                            <tbody id="history-table-body">
+
+
+                                <!--
+                                    Os atendimentos reais serão
+                                    inseridos aqui pelo banco de dados.
+                                -->
+
+
+                            </tbody>
+
+
+                        </table>
+
+
+                    </div>
+
+
+
+                    <!-- ESTADO VAZIO -->
+
+                    <div id="history-empty-state" style="
+                            min-height: 260px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 35px 20px;
+                            text-align: center;
+                        ">
+
+
+                        <div>
+
+
+                            <div style="
+                                    width: 52px;
+                                    height: 52px;
+                                    margin: 0 auto 16px;
+                                    display: grid;
+                                    place-items: center;
+                                    border-radius: 14px;
+                                    background: rgba(126, 104, 255, 0.08);
+                                    color: #8c7cff;
+                                    font-size: 22px;
+                                ">
+                                ◷
+                            </div>
+
+
+                            <strong style="
+                                    display: block;
+                                    margin-bottom: 7px;
+                                    color: #e8eaf1;
+                                    font-size: 14px;
+                                ">
+                                Nenhum atendimento registrado
+                            </strong>
+
+
+                            <p style="
+                                    max-width: 390px;
+                                    margin: 0 auto;
+                                    color: #747c8e;
+                                    font-size: 11px;
+                                    line-height: 1.7;
+                                ">
+                                Quando os primeiros atendimentos forem
+                                concluídos, as conversas aparecerão
+                                automaticamente neste histórico.
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- RODAPÉ -->
+
+                    <div class="history-table-footer">
+
+
+                        <p id="history-results-text">
+                            Nenhum atendimento registrado
+                        </p>
+
+
+                    </div>
+
+
+                </article>
+
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         MODAL DE CONVERSA
+         SERÁ PREENCHIDO COM DADOS REAIS
+    ====================================================== -->
+
+    <div class="history-modal-overlay" id="history-modal">
+
+
+        <div class="history-modal">
+
+
+            <div class="history-modal-header">
+
+
+                <div>
+
+
+                    <span class="history-modal-label">
+                        DETALHES DO ATENDIMENTO
+                    </span>
+
+
+                    <h3 id="modal-history-name">
+                        Atendimento
+                    </h3>
+
+
+                    <p>
+                        Conversa realizada pelo WhatsApp
+                    </p>
+
+
+                </div>
+
+
+
+                <button type="button" class="history-modal-close" id="history-modal-close" aria-label="Fechar">
+                    ×
+                </button>
+
+
+            </div>
+
+
+
+            <div class="history-modal-body">
+
+
+                <!-- RESUMO -->
+
+                <div class="history-modal-summary">
+
+
+                    <strong>
+                        ✦ Resumo da Aion
+                    </strong>
+
+
+                    <p id="history-summary">
+                        O resumo do atendimento será exibido aqui.
+                    </p>
+
+
+                </div>
+
+
+
+                <!-- INFORMAÇÕES -->
+
+                <div class="history-modal-info">
+
+
+                    <div>
+
+                        <span>
+                            Cliente
+                        </span>
+
+                        <strong id="modal-client">
+                            —
+                        </strong>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <span>
+                            WhatsApp
+                        </span>
+
+                        <strong id="modal-phone">
+                            —
+                        </strong>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <span>
+                            Responsável
+                        </span>
+
+                        <strong id="modal-responsible">
+                            —
+                        </strong>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <span>
+                            Duração
+                        </span>
+
+                        <strong id="modal-duration">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- CONVERSA -->
+
+                <div class="history-modal-conversation">
+
+
+                    <h4>
+                        CONVERSA
+                    </h4>
+
+
+                    <div id="history-modal-messages" style="
+                            padding: 20px;
+                            border-radius: 12px;
+                            background: rgba(255, 255, 255, 0.02);
+                            color: #747c8e;
+                            font-size: 11px;
+                            text-align: center;
+                        ">
+                        As mensagens do atendimento serão exibidas aqui.
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- OVERLAY MOBILE -->
+
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+
+
+    <!-- SCRIPTS -->
+
+    <script src="../javascript/dashboard.js"></script>
+
+    <script type="module" src="../javascript/historico.js"></script>
+
+    <script type="module" src="../javascript/auth-guard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Crie sua conta na plataforma Aion AI.">
+
+    <title>Criar conta | Aion AI</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body class="auth-body">
+
+
+    <main class="auth-page">
+
+
+        <div class="auth-light auth-light-one"></div>
+        <div class="auth-light auth-light-two"></div>
+
+
+
+        <section class="auth-card">
+
+
+            <a href="index.html" class="logo auth-logo">
+
+                <span class="logo-symbol">
+                    A
+                </span>
+
+                <span class="logo-name">
+                    Aion<span>AI</span>
+                </span>
+
+            </a>
+
+
+
+            <div class="auth-heading">
+
+                <span class="auth-label">
+                    COMECE AGORA
+                </span>
+
+                <h1>
+                    Crie sua conta
+                </h1>
+
+                <p>
+                    Configure sua empresa e comece a preparar
+                    seu assistente inteligente.
+                </p>
+
+            </div>
+
+
+
+            <form class="auth-form" id="register-form">
+
+
+                <div class="form-group">
+
+                    <label for="full-name">
+                        Seu nome
+                    </label>
+
+                    <input type="text" id="full-name" placeholder="Digite seu nome" autocomplete="name" required>
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label for="company-name">
+                        Nome da empresa
+                    </label>
+
+                    <input type="text" id="company-name" placeholder="Ex: GB Digital" required>
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input type="email" id="email" placeholder="empresa@exemplo.com" autocomplete="email" required>
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Senha
+                    </label>
+
+                    <div class="password-wrapper">
+
+                        <input type="password" id="password" placeholder="Crie uma senha" autocomplete="new-password"
+                            minlength="6" required>
+
+                        <button type="button" id="toggle-password" class="password-toggle" aria-label="Mostrar senha">
+                            ◉
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label for="confirm-password">
+                        Confirmar senha
+                    </label>
+
+                    <div class="password-wrapper">
+
+                        <input type="password" id="confirm-password" placeholder="Digite novamente sua senha"
+                            autocomplete="new-password" minlength="6" required>
+
+                        <button type="button" id="toggle-confirm-password" class="password-toggle"
+                            aria-label="Mostrar senha">
+                            ◉
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <p id="register-message" style="
+                        display: none;
+                        margin: 0;
+                        padding: 11px 13px;
+                        border-radius: 9px;
+                        font-size: 12px;
+                        line-height: 1.5;
+                    "></p>
+
+
+
+                <button type="submit" class="button auth-submit" id="register-button">
+
+                    <span id="register-button-text">
+                        Criar conta
+                    </span>
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+            </form>
+
+
+
+            <p class="register-text">
+
+                Já possui uma conta?
+
+                <a href="login.html">
+                    Entrar
+                </a>
+
+            </p>
+
+
+
+            <a href="index.html" class="back-home">
+                ← Voltar para página inicial
+            </a>
+
+
+        </section>
+
+
+
+        <section class="auth-showcase">
+
+
+            <div class="showcase-badge">
+
+                <span></span>
+
+                AION AI
+
+            </div>
+
+
+
+            <h2>
+
+                Transforme atendimento em
+
+                <strong>
+                    inteligência para o seu negócio.
+                </strong>
+
+            </h2>
+
+
+
+            <p>
+                Cadastre sua empresa, ensine a Aion sobre seus
+                serviços e prepare sua operação para automatizar
+                atendimentos.
+            </p>
+
+
+
+            <div class="showcase-dashboard">
+
+
+                <div class="showcase-top">
+
+                    <div>
+
+                        <small>
+                            SUA OPERAÇÃO
+                        </small>
+
+                        <strong>
+                            Aion AI
+                        </strong>
+
+                    </div>
+
+                    <span class="showcase-status">
+                        Configurável
+                    </span>
+
+                </div>
+
+
+
+                <div class="showcase-info">
+
+                    <div>
+
+                        <span class="info-dot info-green"></span>
+
+                        <p>
+                            Base de conhecimento
+                            <strong>Personalizada</strong>
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span class="info-dot info-purple"></span>
+
+                        <p>
+                            Atendimento
+                            <strong>Inteligente</strong>
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="showcase-features">
+
+                <div>
+                    <span>✓</span>
+                    Conta por empresa
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Assistente configurável
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    Dados protegidos por usuário
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <script src="../javascript/main.js"></script>
+
+    <script type="module" src="../javascript/cadastro.js"></script>
+
+
+</body>
+
+</html>

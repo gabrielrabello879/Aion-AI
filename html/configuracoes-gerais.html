@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Configurações | Aion AI</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="../css/configuracoes-gerais.css">
+
+</head>
+
+
+<body class="dashboard-body">
+
+    <div class="dashboard-layout">
+
+
+        <!-- =====================================================
+             SIDEBAR
+        ====================================================== -->
+
+        <aside class="sidebar" id="sidebar">
+
+
+            <div class="sidebar-top">
+
+
+                <a href="index.html" class="logo">
+
+                    <span class="logo-symbol">
+                        A
+                    </span>
+
+                    <span class="logo-name">
+                        Aion<span>AI</span>
+                    </span>
+
+                </a>
+
+
+                <button type="button" class="sidebar-close" id="sidebar-close" aria-label="Fechar menu">
+                    ✕
+                </button>
+
+
+            </div>
+
+
+
+            <!-- EMPRESA -->
+
+            <div class="company-card">
+
+
+                <div class="company-avatar">
+                    GB
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        GB Digital
+                    </strong>
+
+                    <span>
+                        Professional
+                    </span>
+
+                </div>
+
+
+                <button type="button" aria-label="Mais opções">
+                    ⋮
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =====================================================
+                 NAVEGAÇÃO
+            ====================================================== -->
+
+            <nav class="sidebar-nav">
+
+
+                <span class="sidebar-label">
+                    PRINCIPAL
+                </span>
+
+
+                <a href="dashboard.html">
+
+                    <span class="nav-icon">
+                        ⌂
+                    </span>
+
+                    Dashboard
+
+                </a>
+
+
+                <a href="chat.html">
+
+                    <span class="nav-icon">
+                        ◉
+                    </span>
+
+                    Atendimentos
+
+                </a>
+
+
+                <a href="conhecimento.html">
+
+                    <span class="nav-icon">
+                        ◇
+                    </span>
+
+                    Base de conhecimento
+
+                </a>
+
+
+                <a href="configuracoes.html">
+
+                    <span class="nav-icon">
+                        ✦
+                    </span>
+
+                    Configurar IA
+
+                </a>
+
+
+
+                <span class="sidebar-label sidebar-label-space">
+                    GERENCIAMENTO
+                </span>
+
+
+                <a href="historico.html">
+
+                    <span class="nav-icon">
+                        ◷
+                    </span>
+
+                    Histórico
+
+                </a>
+
+
+                <a href="configuracoes-gerais.html" class="active">
+
+                    <span class="nav-icon">
+                        ⚙
+                    </span>
+
+                    Configurações
+
+                </a>
+
+
+            </nav>
+
+
+
+            <!-- =====================================================
+                 STATUS
+            ====================================================== -->
+
+            <div class="sidebar-status">
+
+
+                <div class="sidebar-status-header">
+
+
+                    <span>
+                        Status do sistema
+                    </span>
+
+
+                    <span class="system-online">
+                        Online
+                    </span>
+
+
+                </div>
+
+
+
+                <div class="sidebar-status-item">
+
+
+                    <div>
+
+                        <span class="status-circle green"></span>
+
+                        Inteligência Artificial
+
+                    </div>
+
+
+                    <strong>
+                        Ativa
+                    </strong>
+
+
+                </div>
+
+
+
+                <div class="sidebar-status-item">
+
+
+                    <div>
+
+                        <span class="status-circle"></span>
+
+                        WhatsApp
+
+                    </div>
+
+
+                    <strong>
+                        Não conectado
+                    </strong>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- USUÁRIO -->
+
+            <div class="sidebar-user">
+
+
+                <div class="user-avatar">
+                    GR
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Gabriel
+                    </strong>
+
+                    <span>
+                        Administrador
+                    </span>
+
+                </div>
+
+
+                <a href="login.html" title="Sair">
+                    ↗
+                </a>
+
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- =====================================================
+             MAIN
+        ====================================================== -->
+
+        <main class="dashboard-main">
+
+
+            <!-- HEADER -->
+
+            <header class="dashboard-header">
+
+
+                <div class="dashboard-header-left">
+
+
+                    <button type="button" class="sidebar-open" id="sidebar-open" aria-label="Abrir menu">
+                        ☰
+                    </button>
+
+
+                    <div>
+
+
+                        <h1>
+                            Configurações
+                        </h1>
+
+
+                        <p>
+                            Gerencie sua empresa e integrações.
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="dashboard-header-actions">
+
+
+                    <div class="live-status">
+
+                        <span></span>
+
+                        Sistema operacional
+
+                    </div>
+
+
+                    <div class="header-avatar">
+                        GR
+                    </div>
+
+
+                </div>
+
+
+            </header>
+
+
+
+            <!-- =====================================================
+                 CONFIGURAÇÕES
+            ====================================================== -->
+
+            <section class="general-settings-page">
+
+
+                <!-- HERO -->
+
+                <div class="general-settings-hero">
+
+
+                    <div>
+
+
+                        <span class="general-settings-label">
+                            CONFIGURAÇÕES DA CONTA
+                        </span>
+
+
+                        <h2>
+                            Gerencie sua Aion AI.
+                        </h2>
+
+
+                        <p>
+                            Configure os dados da empresa,
+                            integrações, equipe, notificações
+                            e informações da sua assinatura.
+                        </p>
+
+
+                    </div>
+
+
+                    <button type="button" class="general-save-button" id="save-general-settings">
+                        Salvar alterações
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- =====================================================
+                     GRID
+                ====================================================== -->
+
+                <div class="general-settings-grid">
+
+
+                    <!-- =================================================
+                         COLUNA ESQUERDA
+                    ================================================== -->
+
+                    <div class="general-settings-column">
+
+
+                        <!-- =================================================
+                             EMPRESA
+                        ================================================== -->
+
+                        <article class="general-card">
+
+
+                            <div class="general-card-header">
+
+
+                                <div class="general-card-title">
+
+
+                                    <span class="general-card-icon">
+                                        ◈
+                                    </span>
+
+
+                                    <div>
+
+
+                                        <h3>
+                                            Empresa
+                                        </h3>
+
+
+                                        <p>
+                                            Informações principais da conta.
+                                        </p>
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <div class="general-card-body">
+
+
+                                <div class="general-form-grid">
+
+
+                                    <!-- NOME -->
+
+                                    <div class="general-field">
+
+
+                                        <label for="business-name">
+                                            Nome da empresa
+                                        </label>
+
+
+                                        <input type="text" id="business-name" placeholder="Nome da sua empresa"
+                                            maxlength="100" autocomplete="organization">
+
+
+                                    </div>
+
+
+
+                                    <!-- CNPJ -->
+
+                                    <div class="general-field">
+
+
+                                        <label for="business-document">
+                                            CNPJ
+                                        </label>
+
+
+                                        <input type="text" id="business-document" placeholder="Informe o CNPJ">
+
+
+                                    </div>
+
+
+
+                                    <!-- EMAIL -->
+
+                                    <div class="general-field">
+
+
+                                        <label for="business-email">
+                                            E-mail
+                                        </label>
+
+
+                                        <input type="email" id="business-email"
+                                            placeholder="Informe o e-mail da empresa">
+
+
+                                    </div>
+
+
+
+                                    <!-- TELEFONE -->
+
+                                    <div class="general-field">
+
+
+                                        <label for="business-phone">
+                                            Telefone
+                                        </label>
+
+
+                                        <input type="text" id="business-phone" placeholder="Informe o telefone">
+
+
+                                    </div>
+
+
+
+                                    <!-- ENDEREÇO -->
+
+                                    <div class="general-field full">
+
+
+                                        <label for="business-address">
+                                            Endereço
+                                        </label>
+
+
+                                        <input type="text" id="business-address"
+                                            placeholder="Informe o endereço da empresa">
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </article>
+
+
+
+                        <!-- =================================================
+                             WHATSAPP
+                        ================================================== -->
+
+                        <article class="general-card whatsapp-card">
+
+
+                            <div class="general-card-header">
+
+
+                                <div class="general-card-title">
+
+
+                                    <span class="general-card-icon">
+                                        ◎
+                                    </span>
+
+
+                                    <div>
+
+
+                                        <h3>
+                                            Integração WhatsApp
+                                        </h3>
+
+
+                                        <p>
+                                            Conecte o WhatsApp Business para
+                                            começar a receber atendimentos.
+                                        </p>
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <!-- STATUS -->
+
+                            <div class="whatsapp-status-area">
+
+
+                                <div class="whatsapp-logo">
+                                    ☏
+                                </div>
+
+
+                                <div class="whatsapp-status-info">
+
+
+                                    <strong>
+                                        WhatsApp Business
+                                    </strong>
+
+
+                                    <p>
+                                        Canal de atendimento da Aion AI.
+                                    </p>
+
+
+                                    <span class="connection-status" id="whatsapp-status">
+                                        Não conectado
+                                    </span>
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <!-- DETALHES -->
+
+                            <div class="whatsapp-details">
+
+
+                                <div class="whatsapp-detail">
+
+
+                                    <span>
+                                        Número conectado
+                                    </span>
+
+
+                                    <strong>
+                                        —
+                                    </strong>
+
+
+                                </div>
+
+
+
+                                <div class="whatsapp-detail">
+
+
+                                    <span>
+                                        Empresa
+                                    </span>
+
+
+                                    <strong>
+                                        GB Digital
+                                    </strong>
+
+
+                                </div>
+
+
+
+                                <div class="whatsapp-detail">
+
+
+                                    <span>
+                                        Status da IA
+                                    </span>
+
+
+                                    <strong>
+                                        Aguardando integração
+                                    </strong>
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <!-- AÇÕES -->
+
+                            <div class="integration-actions">
+
+
+                                <button type="button" class="integration-button" id="reconfigure-whatsapp" disabled
+                                    title="Disponível após integração com a API oficial">
+                                    Conectar WhatsApp
+                                </button>
+
+
+                                <button type="button" class="integration-button danger" id="disconnect-whatsapp"
+                                    disabled>
+                                    Desconectar
+                                </button>
+
+
+                            </div>
+
+
+                        </article>
+
+
+
+                        <!-- =================================================
+                             EQUIPE
+                        ================================================== -->
+
+                        <article class="general-card">
+
+
+                            <div class="general-card-header">
+
+
+                                <div class="general-card-title">
+
+
+                                    <span class="general-card-icon">
+                                        ◉
+                                    </span>
+
+
+                                    <div>
+
+
+                                        <h3>
+                                            Equipe
+                                        </h3>
+
+
+                                        <p>
+                                            Pessoas com acesso ao painel.
+                                        </p>
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <div class="general-card-body">
+
+
+                                <div class="team-list" id="team-list">
+
+
+                                    <div class="team-member">
+
+
+                                        <div class="team-avatar">
+                                            GR
+                                        </div>
+
+
+                                        <div class="team-member-info">
+
+
+                                            <strong>
+                                                Gabriel
+                                            </strong>
+
+
+                                            <span>
+                                                Administrador principal
+                                            </span>
+
+
+                                        </div>
+
+
+                                        <span class="team-role">
+                                            Administrador
+                                        </span>
+
+
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <button type="button" class="add-member-button" id="add-team-member">
+                                    + Adicionar membro
+                                </button>
+
+
+                            </div>
+
+
+                        </article>
+
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         COLUNA DIREITA
+                    ================================================== -->
+
+                    <div class="general-settings-column">
+
+
+                        <!-- =================================================
+                             PLANO
+                        ================================================== -->
+
+                        <article class="general-card">
+
+
+                            <div class="general-card-header">
+
+
+                                <div class="general-card-title">
+
+
+                                    <span class="general-card-icon">
+                                        ✦
+                                    </span>
+
+
+                                    <div>
+
+
+                                        <h3>
+                                            Plano
+                                        </h3>
+
+
+                                        <p>
+                                            Informações da assinatura atual.
+                                        </p>
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <div class="plan-card-content">
+
+
+                                <div class="current-plan">
+
+
+                                    <div class="current-plan-top">
+
+
+                                        <div>
+
+
+                                            <span>
+                                                PLANO ATUAL
+                                            </span>
+
+
+                                            <h3>
+                                                Professional
+                                            </h3>
+
+
+                                        </div>
+
+
+
+                                        <strong class="plan-price">
+
+                                            R$ 199
+
+                                            <small>
+                                                /mês
+                                            </small>
+
+                                        </strong>
+
+
+                                    </div>
+
+
+
+                                    <!-- RECURSOS -->
+
+                                    <div class="plan-features">
+
+
+                                        <div class="plan-feature">
+
+                                            <span>
+                                                ✓
+                                            </span>
+
+                                            Atendimento com IA 24/7
+
+                                        </div>
+
+
+                                        <div class="plan-feature">
+
+                                            <span>
+                                                ✓
+                                            </span>
+
+                                            Integração com WhatsApp
+
+                                        </div>
+
+
+                                        <div class="plan-feature">
+
+                                            <span>
+                                                ✓
+                                            </span>
+
+                                            Histórico de conversas
+
+                                        </div>
+
+
+                                        <div class="plan-feature">
+
+                                            <span>
+                                                ✓
+                                            </span>
+
+                                            Base de conhecimento
+
+                                        </div>
+
+
+                                    </div>
+
+
+
+                                    <button type="button" class="plan-button">
+                                        Gerenciar plano
+                                    </button>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </article>
+
+
+
+                        <!-- =================================================
+                             NOTIFICAÇÕES
+                        ================================================== -->
+
+                        <article class="general-card">
+
+
+                            <div class="general-card-header">
+
+
+                                <div class="general-card-title">
+
+
+                                    <span class="general-card-icon">
+                                        ♢
+                                    </span>
+
+
+                                    <div>
+
+
+                                        <h3>
+                                            Notificações
+                                        </h3>
+
+
+                                        <p>
+                                            Escolha quais alertas deseja receber.
+                                        </p>
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <div class="general-card-body">
+
+
+                                <!-- HUMANO -->
+
+                                <div class="general-switch-row">
+
+
+                                    <div>
+
+
+                                        <strong>
+                                            Transferência para humano
+                                        </strong>
+
+
+                                        <p>
+                                            Avisar quando a IA solicitar ajuda.
+                                        </p>
+
+
+                                    </div>
+
+
+                                    <label class="general-switch">
+
+
+                                        <input type="checkbox" checked>
+
+
+                                        <span class="general-switch-track"></span>
+
+
+                                    </label>
+
+
+                                </div>
+
+
+
+                                <!-- NOVA CONVERSA -->
+
+                                <div class="general-switch-row">
+
+
+                                    <div>
+
+
+                                        <strong>
+                                            Nova conversa
+                                        </strong>
+
+
+                                        <p>
+                                            Avisar sobre novos atendimentos.
+                                        </p>
+
+
+                                    </div>
+
+
+                                    <label class="general-switch">
+
+
+                                        <input type="checkbox">
+
+
+                                        <span class="general-switch-track"></span>
+
+
+                                    </label>
+
+
+                                </div>
+
+
+
+                                <!-- RESUMO -->
+
+                                <div class="general-switch-row">
+
+
+                                    <div>
+
+
+                                        <strong>
+                                            Resumo diário
+                                        </strong>
+
+
+                                        <p>
+                                            Receber desempenho diário do assistente.
+                                        </p>
+
+
+                                    </div>
+
+
+                                    <label class="general-switch">
+
+
+                                        <input type="checkbox" checked>
+
+
+                                        <span class="general-switch-track"></span>
+
+
+                                    </label>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </article>
+
+
+
+                        <!-- =================================================
+                             SEGURANÇA
+                        ================================================== -->
+
+                        <article class="general-card">
+
+
+                            <div class="general-card-header">
+
+
+                                <div class="general-card-title">
+
+
+                                    <span class="general-card-icon">
+                                        ◇
+                                    </span>
+
+
+                                    <div>
+
+
+                                        <h3>
+                                            Segurança
+                                        </h3>
+
+
+                                        <p>
+                                            Proteção e acesso à sua conta.
+                                        </p>
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <div class="general-card-body">
+
+
+                                <div class="general-field">
+
+
+                                    <label for="account-email">
+                                        E-mail da conta
+                                    </label>
+
+
+                                    <input type="email" id="account-email" placeholder="E-mail ainda não configurado"
+                                        disabled>
+
+
+                                </div>
+
+
+
+                                <button type="button" class="integration-button">
+                                    Alterar senha
+                                </button>
+
+
+                            </div>
+
+
+                        </article>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         MODAL EQUIPE
+    ====================================================== -->
+
+    <div class="general-modal-overlay" id="team-modal">
+
+
+        <div class="general-modal">
+
+
+            <div class="general-modal-header">
+
+
+                <div>
+
+
+                    <h3>
+                        Adicionar membro
+                    </h3>
+
+
+                    <p>
+                        Convide uma pessoa para acessar a Aion AI.
+                    </p>
+
+
+                </div>
+
+
+                <button type="button" class="general-modal-close" id="close-team-modal" aria-label="Fechar">
+                    ×
+                </button>
+
+
+            </div>
+
+
+
+            <div class="general-modal-body">
+
+
+                <!-- NOME -->
+
+                <div class="general-field">
+
+
+                    <label for="member-name">
+                        Nome
+                    </label>
+
+
+                    <input type="text" id="member-name" placeholder="Nome do membro">
+
+
+                </div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="general-field">
+
+
+                    <label for="member-email">
+                        E-mail
+                    </label>
+
+
+                    <input type="email" id="member-email" placeholder="E-mail do membro">
+
+
+                </div>
+
+
+
+                <!-- PERMISSÃO -->
+
+                <div class="general-field">
+
+
+                    <label for="member-role">
+                        Permissão
+                    </label>
+
+
+                    <select id="member-role">
+
+
+                        <option>
+                            Atendente
+                        </option>
+
+
+                        <option>
+                            Administrador
+                        </option>
+
+
+                    </select>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="general-modal-footer">
+
+
+                <button type="button" class="modal-secondary" id="cancel-team-modal">
+                    Cancelar
+                </button>
+
+
+                <button type="button" class="general-save-button" id="confirm-team-member">
+                    Adicionar
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- OVERLAY MOBILE -->
+
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+
+
+    <!-- SCRIPTS -->
+
+    <script src="../javascript/dashboard.js"></script>
+
+    <script src="../javascript/configuracoes-gerais.js"></script>
+
+    <script type="module" src="../javascript/auth-guard.js"></script>
+    <script type="module" src="../javascript/configuracoes-gerais.js"></script>
+
+</body>
+
+</html>

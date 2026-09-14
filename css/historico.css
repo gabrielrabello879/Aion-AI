@@ -1,0 +1,1152 @@
+/* =====================================================
+   AION AI - HISTÓRICO
+===================================================== */
+
+.history-page {
+    min-height: calc(100vh - 82px);
+    padding: 32px;
+    padding-bottom: 70px;
+    background: #090b11;
+}
+
+
+/* HERO */
+
+.history-hero {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 24px;
+
+    margin-bottom: 24px;
+}
+
+.history-label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #8878ff;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 1.4px;
+}
+
+.history-hero h2 {
+    margin-bottom: 7px;
+
+    font-size: 34px;
+
+    letter-spacing: -1px;
+}
+
+.history-hero p {
+    max-width: 650px;
+
+    color: #81899c;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+}
+
+.history-export {
+    min-height: 44px;
+
+    padding: 0 17px;
+
+    border-radius: 10px;
+
+    border:
+        1px solid rgba(126, 105, 255, 0.18);
+
+    background:
+        rgba(111, 91, 255, 0.08);
+
+    color: #a89cff;
+
+    font-family: inherit;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   MÉTRICAS
+===================================================== */
+
+.history-metrics {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 14px;
+
+    margin-bottom: 18px;
+}
+
+.history-metric {
+    min-width: 0;
+
+    padding: 18px;
+
+    border-radius: 13px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.06);
+
+    background:
+        linear-gradient(145deg,
+            #10131c,
+            #0d1017);
+}
+
+.history-metric-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-bottom: 13px;
+}
+
+.history-metric-icon {
+    width: 34px;
+    height: 34px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 9px;
+
+    background:
+        rgba(111, 91, 255, 0.09);
+
+    color: #998bff;
+
+    font-size: 13px;
+}
+
+.history-metric-change {
+    color: #4cda8e;
+
+    font-size: 9px;
+}
+
+.history-metric>strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #f0f2f7;
+
+    font-size: 23px;
+}
+
+.history-metric>span {
+    color: #788094;
+
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   CARD PRINCIPAL
+===================================================== */
+
+.history-card {
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.06);
+
+    background: #0e1119;
+}
+
+
+/* =====================================================
+   FILTROS
+===================================================== */
+
+.history-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 17px;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.055);
+}
+
+.history-search {
+    position: relative;
+
+    width: min(340px, 100%);
+}
+
+.history-search span {
+    position: absolute;
+
+    top: 50%;
+    left: 13px;
+
+    transform: translateY(-50%);
+
+    color: #687084;
+}
+
+.history-search input {
+    width: 100%;
+    height: 42px;
+
+    padding: 0 13px 0 38px;
+
+    border-radius: 9px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
+
+    outline: none;
+
+    background: #090c12;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 12px;
+}
+
+.history-search input:focus {
+    border-color:
+        rgba(126, 105, 255, 0.5);
+}
+
+.history-filters {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.history-filters select {
+    height: 42px;
+
+    padding: 0 32px 0 12px;
+
+    border-radius: 9px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
+
+    outline: none;
+
+    background: #090c12;
+
+    color: #aeb4c2;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   TABELA
+===================================================== */
+
+.history-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+.history-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 850px;
+}
+
+.history-table th {
+    padding: 13px 16px;
+
+    background:
+        rgba(255, 255, 255, 0.012);
+
+    color: #626b80;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    text-align: left;
+}
+
+.history-table td {
+    padding: 15px 16px;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.045);
+
+    color: #aeb4c1;
+
+    font-size: 11px;
+
+    vertical-align: middle;
+}
+
+.history-table tbody tr {
+    transition: 0.2s;
+}
+
+.history-table tbody tr:hover {
+    background:
+        rgba(255, 255, 255, 0.018);
+}
+
+
+/* CLIENTE */
+
+.history-client {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.history-client-avatar {
+    width: 36px;
+    height: 36px;
+
+    flex: 0 0 36px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #191e2a;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
+
+    color: #d5d9e2;
+
+    font-size: 8px;
+    font-weight: 800;
+}
+
+.history-client strong {
+    display: block;
+
+    color: #e8eaf0;
+
+    font-size: 11px;
+}
+
+.history-client span {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #646d80;
+
+    font-size: 9px;
+}
+
+
+/* BADGES */
+
+.history-badge {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 5px 7px;
+
+    border-radius: 6px;
+
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.history-badge.ai {
+    background:
+        rgba(111, 91, 255, 0.1);
+
+    color: #9c8eff;
+}
+
+.history-badge.human {
+    background:
+        rgba(216, 161, 74, 0.09);
+
+    color: #e0aa56;
+}
+
+.history-badge.finished {
+    background:
+        rgba(65, 216, 137, 0.08);
+
+    color: #4ddd8f;
+}
+
+.history-badge.transferred {
+    background:
+        rgba(239, 167, 74, 0.08);
+
+    color: #e7ad5d;
+}
+
+
+/* AÇÃO */
+
+.history-view-button {
+    min-height: 33px;
+
+    padding: 0 11px;
+
+    border-radius: 7px;
+
+    border:
+        1px solid rgba(126, 105, 255, 0.16);
+
+    background:
+        rgba(111, 91, 255, 0.06);
+
+    color: #9d90ff;
+
+    font-family: inherit;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.history-view-button:hover {
+    background:
+        rgba(111, 91, 255, 0.12);
+}
+
+
+/* =====================================================
+   RODAPÉ DA TABELA
+===================================================== */
+
+.history-table-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 15px 17px;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.05);
+}
+
+.history-table-footer p {
+    color: #6d7589;
+
+    font-size: 10px;
+}
+
+.history-pagination {
+    display: flex;
+
+    gap: 5px;
+}
+
+.history-pagination button {
+    min-width: 32px;
+    height: 32px;
+
+    padding: 0 8px;
+
+    border-radius: 7px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.06);
+
+    background: #11151e;
+
+    color: #7d8598;
+
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+.history-pagination button.active {
+    border-color:
+        rgba(126, 105, 255, 0.25);
+
+    background:
+        rgba(111, 91, 255, 0.11);
+
+    color: #a99dff;
+}
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+.history-modal-overlay {
+    position: fixed;
+    inset: 0;
+
+    z-index: 9999;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background:
+        rgba(3, 5, 10, 0.8);
+
+    backdrop-filter: blur(8px);
+}
+
+.history-modal-overlay.active {
+    display: flex;
+}
+
+.history-modal {
+    width: min(620px, 100%);
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    border-radius: 17px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
+
+    background:
+        linear-gradient(145deg,
+            #11151f,
+            #0c0f16);
+
+    box-shadow:
+        0 30px 90px rgba(0, 0, 0, 0.55);
+}
+
+.history-modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 22px;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.055);
+}
+
+.history-modal-label {
+    color: #8f80ff;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 1.3px;
+}
+
+.history-modal-header h3 {
+    margin-top: 4px;
+
+    font-size: 19px;
+}
+
+.history-modal-header p {
+    margin-top: 4px;
+
+    color: #747d90;
+
+    font-size: 10px;
+}
+
+.history-modal-close {
+    width: 34px;
+    height: 34px;
+
+    flex: 0 0 34px;
+
+    border: none;
+    border-radius: 8px;
+
+    background:
+        rgba(255, 255, 255, 0.04);
+
+    color: #9299aa;
+
+    font-size: 19px;
+
+    cursor: pointer;
+}
+
+.history-modal-body {
+    padding: 22px;
+}
+
+.history-modal-summary {
+    margin-bottom: 20px;
+
+    padding: 15px;
+
+    border-radius: 11px;
+
+    border:
+        1px solid rgba(126, 105, 255, 0.13);
+
+    background:
+        rgba(111, 91, 255, 0.05);
+}
+
+.history-modal-summary strong {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 11px;
+}
+
+.history-modal-summary p {
+    color: #848c9f;
+
+    font-size: 11px;
+
+    line-height: 1.65;
+}
+
+.history-modal-info {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.history-modal-info div {
+    padding: 12px;
+
+    border-radius: 9px;
+
+    background: #0a0d13;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.05);
+}
+
+.history-modal-info span,
+.history-modal-info strong {
+    display: block;
+}
+
+.history-modal-info span {
+    margin-bottom: 4px;
+
+    color: #687185;
+
+    font-size: 9px;
+}
+
+.history-modal-info strong {
+    color: #c4c9d4;
+
+    font-size: 11px;
+}
+
+
+/* MENSAGENS DO MODAL */
+
+.history-modal-conversation {
+    display: grid;
+
+    gap: 12px;
+}
+
+.history-modal-conversation>h4 {
+    margin-bottom: 2px;
+
+    color: #747d90;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+}
+
+.history-modal-message {
+    max-width: 85%;
+
+    padding: 11px 13px;
+
+    border-radius: 10px;
+
+    color: #cdd1db;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+}
+
+.history-modal-message.client {
+    background: #171b25;
+}
+
+.history-modal-message.assistant {
+    margin-left: auto;
+
+    border:
+        1px solid rgba(126, 105, 255, 0.12);
+
+    background:
+        rgba(111, 91, 255, 0.07);
+}
+
+.history-modal-message span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #7972b4;
+
+    font-size: 8px;
+    font-weight: 800;
+}
+
+
+/* =====================================================
+   RESPONSIVO
+===================================================== */
+
+@media (max-width: 1050px) {
+
+    .history-metrics {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .history-toolbar {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .history-search {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .history-page {
+        padding: 24px 5% 60px;
+    }
+
+    .history-hero {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .history-export {
+        width: 100%;
+    }
+
+    .history-metrics {
+        grid-template-columns: 1fr;
+    }
+
+    .history-filters {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .history-modal-info {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =====================================================
+   AJUSTE DE LEGIBILIDADE - HISTÓRICO
+===================================================== */
+
+.history-table th {
+    font-size: 10px;
+}
+
+.history-table td {
+    font-size: 12px;
+}
+
+.history-client strong {
+    font-size: 12px;
+}
+
+.history-client span {
+    font-size: 10px;
+}
+
+.history-badge {
+    font-size: 10px;
+}
+
+.history-view-button {
+    font-size: 10px;
+}
+
+.history-table-footer p {
+    font-size: 11px;
+}
+
+.history-pagination button {
+    font-size: 11px;
+}
+
+.history-metric>span {
+    font-size: 12px;
+}
+
+.history-metric-change {
+    font-size: 10px;
+}
+
+.history-search input {
+    font-size: 13px;
+}
+
+.history-filters select {
+    font-size: 12px;
+}
+
+/* =====================================================
+   AION AI - AUMENTO DE ESCALA DO HISTÓRICO
+===================================================== */
+
+/* HERO */
+
+.history-label {
+    font-size: 11px;
+}
+
+.history-hero h2 {
+    font-size: 37px;
+}
+
+.history-hero p {
+    font-size: 14px;
+}
+
+.history-export {
+    min-height: 47px;
+    padding: 0 19px;
+    font-size: 12px;
+}
+
+
+/* MÉTRICAS */
+
+.history-metric {
+    padding: 20px;
+}
+
+.history-metric-icon {
+    width: 38px;
+    height: 38px;
+
+    font-size: 14px;
+}
+
+.history-metric>strong {
+    font-size: 25px;
+}
+
+.history-metric>span {
+    font-size: 13px;
+}
+
+
+/* BUSCA E FILTROS */
+
+.history-toolbar {
+    padding: 19px;
+}
+
+.history-search input {
+    height: 46px;
+    font-size: 14px;
+}
+
+.history-filters select {
+    height: 46px;
+    font-size: 13px;
+}
+
+
+/* TABELA */
+
+.history-table th {
+    padding: 15px 17px;
+
+    font-size: 11px;
+}
+
+.history-table td {
+    padding: 17px;
+
+    font-size: 13px;
+}
+
+.history-client-avatar {
+    width: 40px;
+    height: 40px;
+
+    flex-basis: 40px;
+
+    font-size: 9px;
+}
+
+.history-client strong {
+    font-size: 13px;
+}
+
+.history-client span {
+    margin-top: 3px;
+
+    font-size: 11px;
+}
+
+.history-badge {
+    padding: 6px 8px;
+
+    font-size: 11px;
+}
+
+.history-view-button {
+    min-height: 37px;
+
+    padding: 0 13px;
+
+    font-size: 11px;
+}
+
+.history-table-footer {
+    padding: 17px 19px;
+}
+
+.history-table-footer p {
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+.history-modal {
+    width: min(690px, 100%);
+
+    border-radius: 18px;
+}
+
+.history-modal-header {
+    gap: 22px;
+
+    padding: 25px;
+}
+
+.history-modal-label {
+    font-size: 10px;
+
+    letter-spacing: 1.4px;
+}
+
+.history-modal-header h3 {
+    margin-top: 6px;
+
+    font-size: 22px;
+}
+
+.history-modal-header p {
+    margin-top: 6px;
+
+    font-size: 12px;
+}
+
+.history-modal-close {
+    width: 38px;
+    height: 38px;
+
+    flex-basis: 38px;
+
+    font-size: 21px;
+}
+
+.history-modal-body {
+    padding: 25px;
+}
+
+
+/* RESUMO */
+
+.history-modal-summary {
+    margin-bottom: 22px;
+
+    padding: 18px;
+
+    border-radius: 12px;
+}
+
+.history-modal-summary strong {
+    margin-bottom: 8px;
+
+    font-size: 13px;
+}
+
+.history-modal-summary p {
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* INFORMAÇÕES */
+
+.history-modal-info {
+    gap: 12px;
+
+    margin-bottom: 23px;
+}
+
+.history-modal-info div {
+    padding: 15px;
+
+    border-radius: 10px;
+}
+
+.history-modal-info span {
+    margin-bottom: 5px;
+
+    font-size: 10px;
+}
+
+.history-modal-info strong {
+    font-size: 13px;
+}
+
+
+/* CONVERSA */
+
+.history-modal-conversation {
+    gap: 14px;
+}
+
+.history-modal-conversation>h4 {
+    font-size: 10px;
+
+    letter-spacing: 1.2px;
+}
+
+.history-modal-message {
+    padding: 14px 16px;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+.history-modal-message span {
+    margin-bottom: 5px;
+
+    font-size: 9px;
+}
+
+
+/* =====================================================
+   CONTEÚDO GERADO PELO JS DENTRO DO MODAL
+===================================================== */
+
+#history-modal-messages {
+    font-size: 13px !important;
+}
+
+#history-modal-messages>div {
+    margin-bottom: 18px !important;
+}
+
+#history-modal-messages>div>div:first-child {
+    font-size: 12px !important;
+}
+
+#history-modal-messages>div>div:nth-child(2) {
+    max-width: 88% !important;
+
+    padding: 14px 16px !important;
+
+    border-radius: 11px !important;
+
+    font-size: 13px !important;
+
+    line-height: 1.75 !important;
+}
+
+#history-modal-messages>div>div:last-child {
+    margin-top: 6px !important;
+
+    font-size: 10px !important;
+}
+
+
+/* =====================================================
+   RESPONSIVO
+===================================================== */
+
+@media (max-width: 650px) {
+
+    .history-modal-header {
+        padding: 21px;
+    }
+
+    .history-modal-body {
+        padding: 21px;
+    }
+
+    .history-modal-header h3 {
+        font-size: 20px;
+    }
+
+    .history-modal-summary p {
+        font-size: 12px;
+    }
+
+}

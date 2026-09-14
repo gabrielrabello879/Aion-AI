@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Complete seu cadastro | Aion AI</title>
+
+    <style>
+        /* =====================================================
+           RESET
+        ====================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+
+            font-family:
+                Inter,
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            background:
+                radial-gradient(circle at 45% 10%,
+                    rgba(107, 71, 255, 0.16),
+                    transparent 30%),
+                radial-gradient(circle at 80% 60%,
+                    rgba(75, 86, 255, 0.10),
+                    transparent 34%),
+                #07080d;
+
+            color: #ffffff;
+        }
+
+        button,
+        input {
+            font: inherit;
+        }
+
+
+        /* =====================================================
+           PÁGINA
+        ====================================================== */
+
+        .onboarding-page {
+            position: relative;
+
+            min-height: 100vh;
+
+            overflow: hidden;
+        }
+
+        .onboarding-page::before {
+            content: "";
+
+            position: absolute;
+
+            width: 700px;
+            height: 700px;
+
+            top: -430px;
+            left: 40%;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(circle,
+                    rgba(108, 69, 255, 0.26),
+                    rgba(108, 69, 255, 0.04) 45%,
+                    transparent 70%);
+
+            pointer-events: none;
+        }
+
+
+        /* =====================================================
+           CONTAINER PRINCIPAL
+        ====================================================== */
+
+        .onboarding-shell {
+            position: relative;
+            z-index: 2;
+
+            width: min(1450px, calc(100% - 70px));
+
+            min-height: calc(100vh - 95px);
+
+            margin: 0 auto;
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, 1fr) minmax(470px, 0.9fr);
+
+            gap: 80px;
+
+            align-items: center;
+
+            padding:
+                40px 0 70px;
+        }
+
+
+        /* =====================================================
+           LADO ESQUERDO
+        ====================================================== */
+
+        .hero-side {
+            min-width: 0;
+
+            padding:
+                10px 0 0;
+        }
+
+
+        /* =====================================================
+           LOGO
+        ====================================================== */
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 18px;
+
+            margin-bottom: 70px;
+
+            text-decoration: none;
+        }
+
+        .brand-symbol {
+            width: 66px;
+            height: 66px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 17px;
+
+            background:
+                linear-gradient(145deg,
+                    #9a63ff,
+                    #642eff);
+
+            color: white;
+
+            font-size: 33px;
+            font-weight: 700;
+
+            box-shadow:
+                0 0 30px rgba(126, 73, 255, 0.45),
+                inset 0 0 20px rgba(255, 255, 255, 0.08);
+        }
+
+        .brand-copy {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brand-name {
+            color: #ffffff;
+
+            font-size: 36px;
+            font-weight: 800;
+
+            letter-spacing: -1.3px;
+        }
+
+        .brand-name span {
+            color: #8d5cff;
+        }
+
+        .brand-slogan {
+            margin-top: 4px;
+
+            color: #8d93ad;
+
+            font-size: 12px;
+            font-weight: 600;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+        }
+
+
+        /* =====================================================
+           BADGE
+        ====================================================== */
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+
+            margin-bottom: 22px;
+
+            padding:
+                8px 14px;
+
+            border:
+                1px solid rgba(146, 104, 255, 0.22);
+
+            border-radius: 999px;
+
+            background:
+                rgba(123, 82, 255, 0.08);
+
+            color: #b89cff;
+
+            font-size: 11px;
+            font-weight: 750;
+
+            letter-spacing: 1.3px;
+        }
+
+        .hero-badge-dot {
+            width: 9px;
+            height: 9px;
+
+            border-radius: 50%;
+
+            background: #a366ff;
+
+            box-shadow:
+                0 0 14px #9b5cff;
+        }
+
+
+        /* =====================================================
+           TÍTULO
+        ====================================================== */
+
+        .hero-title {
+            max-width: 610px;
+
+            margin-bottom: 20px;
+
+            color: #f7f8fb;
+
+            font-size:
+                clamp(48px, 5vw, 74px);
+
+            line-height: 0.98;
+
+            letter-spacing: -3px;
+        }
+
+        .hero-title span {
+            background:
+                linear-gradient(90deg,
+                    #9c62ff,
+                    #7549ff);
+
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            color: transparent;
+        }
+
+        .hero-description {
+            max-width: 620px;
+
+            color: #a7adc0;
+
+            font-size: 18px;
+
+            line-height: 1.65;
+        }
+
+
+        /* =====================================================
+           BENEFÍCIOS
+        ====================================================== */
+
+        .benefit-list {
+            display: flex;
+            flex-direction: column;
+
+            gap: 18px;
+
+            margin-top: 42px;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .benefit-icon {
+            flex: 0 0 auto;
+
+            width: 60px;
+            height: 60px;
+
+            display: grid;
+            place-items: center;
+
+            border:
+                1px solid rgba(130, 104, 255, 0.13);
+
+            border-radius: 14px;
+
+            background:
+                linear-gradient(145deg,
+                    rgba(126, 89, 255, 0.13),
+                    rgba(255, 255, 255, 0.025));
+
+            color: #8e62ff;
+
+            font-size: 26px;
+
+            box-shadow:
+                inset 0 0 18px rgba(124, 88, 255, 0.05);
+        }
+
+        .benefit-text strong {
+            display: block;
+
+            margin-bottom: 4px;
+
+            color: #f0f1f5;
+
+            font-size: 17px;
+        }
+
+        .benefit-text span {
+            color: #81889e;
+
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           MOCKUP AION
+        ====================================================== */
+
+        .mockup-area {
+            position: relative;
+
+            height: 290px;
+
+            margin-top: 15px;
+        }
+
+        .mockup-panel {
+            position: absolute;
+
+            width: 480px;
+            height: 250px;
+
+            right: 0;
+            bottom: -15px;
+
+            transform:
+                perspective(900px) rotateY(-18deg) rotateX(4deg);
+
+            border:
+                1px solid rgba(129, 94, 255, 0.22);
+
+            border-radius: 22px;
+
+            background:
+                linear-gradient(150deg,
+                    #0d0f18,
+                    #111424);
+
+            box-shadow:
+                0 30px 80px rgba(0, 0, 0, 0.55),
+                0 0 35px rgba(94, 65, 255, 0.10);
+
+            overflow: hidden;
+        }
+
+        .mockup-sidebar {
+            position: absolute;
+
+            width: 116px;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+
+            padding:
+                22px 14px;
+
+            border-right:
+                1px solid rgba(255, 255, 255, 0.05);
+
+            background:
+                rgba(6, 7, 12, 0.55);
+        }
+
+        .mini-brand {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            margin-bottom: 24px;
+
+            color: #ffffff;
+
+            font-size: 9px;
+            font-weight: 700;
+        }
+
+        .mini-brand span {
+            width: 17px;
+            height: 17px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 5px;
+
+            background: #764fff;
+
+            font-size: 8px;
+        }
+
+        .mini-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .mini-nav-item {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+
+            color: #6f768d;
+
+            font-size: 7px;
+        }
+
+        .mini-nav-item::before {
+            content: "";
+
+            width: 6px;
+            height: 6px;
+
+            border-radius: 2px;
+
+            border:
+                1px solid #6954cc;
+        }
+
+        .mockup-content {
+            position: absolute;
+
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 116px;
+
+            padding:
+                53px 34px;
+        }
+
+        .mockup-hello {
+            color: #d5d7e1;
+
+            font-size: 18px;
+
+            line-height: 1.5;
+
+            font-style: italic;
+        }
+
+        .mockup-input {
+            position: absolute;
+
+            left: 34px;
+            right: 34px;
+            bottom: 30px;
+
+            height: 38px;
+
+            display: flex;
+            align-items: center;
+
+            padding:
+                0 13px;
+
+            border:
+                1px solid rgba(121, 92, 255, 0.15);
+
+            border-radius: 9px;
+
+            background:
+                rgba(255, 255, 255, 0.025);
+
+            color: #666d81;
+
+            font-size: 8px;
+        }
+
+        .mockup-a {
+            position: absolute;
+
+            width: 108px;
+            height: 108px;
+
+            left: 51%;
+            bottom: -28px;
+
+            transform:
+                translateX(-50%);
+
+            display: grid;
+            place-items: center;
+
+            border:
+                2px solid rgba(130, 88, 255, 0.65);
+
+            border-radius: 20px;
+
+            background:
+                linear-gradient(145deg,
+                    #17152b,
+                    #281454);
+
+            color: #c0a7ff;
+
+            font-size: 50px;
+            font-weight: 700;
+
+            box-shadow:
+                0 0 25px rgba(125, 78, 255, 0.45),
+                inset 0 0 22px rgba(127, 79, 255, 0.24);
+        }
+
+
+        /* =====================================================
+           TEXTO INFERIOR ESQUERDO
+        ====================================================== */
+
+        .trust-copy {
+            margin-top: 35px;
+
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+
+            color: #9096aa;
+
+            font-size: 12px;
+
+            line-height: 1.6;
+        }
+
+        .trust-line {
+            width: 48px;
+            height: 2px;
+
+            margin-top: 8px;
+
+            background:
+                linear-gradient(90deg,
+                    #8756ff,
+                    transparent);
+        }
+
+
+        /* =====================================================
+           LADO DIREITO
+        ====================================================== */
+
+        .form-side {
+            min-width: 0;
+        }
+
+        .security-info {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 12px;
+
+            margin-bottom: 48px;
+
+            color: #9ca2b7;
+
+            font-size: 11px;
+        }
+
+        .security-shield {
+            width: 28px;
+            height: 28px;
+
+            display: grid;
+            place-items: center;
+
+            border:
+                1px solid rgba(142, 121, 255, 0.26);
+
+            border-radius: 9px;
+
+            color: #9b8bff;
+
+            background:
+                rgba(128, 97, 255, 0.06);
+        }
+
+        .security-info strong {
+            display: block;
+
+            margin-bottom: 2px;
+
+            color: #d7d9e2;
+
+            font-size: 11px;
+        }
+
+        .security-info span {
+            color: #6f758a;
+
+            font-size: 10px;
+        }
+
+
+        /* =====================================================
+           CARD
+        ====================================================== */
+
+        .registration-card {
+            position: relative;
+
+            width: 100%;
+
+            padding:
+                48px 42px 36px;
+
+            border:
+                1px solid rgba(122, 93, 255, 0.55);
+
+            border-radius: 25px;
+
+            background:
+                linear-gradient(150deg,
+                    rgba(19, 21, 35, 0.96),
+                    rgba(9, 11, 19, 0.96));
+
+            box-shadow:
+                0 30px 75px rgba(0, 0, 0, 0.5),
+                inset 0 0 45px rgba(101, 73, 255, 0.035);
+        }
+
+        .registration-card::before {
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            border-radius: inherit;
+
+            background:
+                radial-gradient(circle at 90% 0%,
+                    rgba(117, 78, 255, 0.12),
+                    transparent 30%);
+
+            pointer-events: none;
+        }
+
+
+        /* =====================================================
+           ÍCONE
+        ====================================================== */
+
+        .company-icon {
+            position: relative;
+            z-index: 1;
+
+            width: 68px;
+            height: 68px;
+
+            display: grid;
+            place-items: center;
+
+            margin-bottom: 25px;
+
+            border:
+                1px solid rgba(130, 109, 255, 0.18);
+
+            border-radius: 16px;
+
+            background:
+                linear-gradient(145deg,
+                    rgba(124, 95, 255, 0.11),
+                    rgba(255, 255, 255, 0.025));
+
+            color: #8f63ff;
+
+            font-size: 30px;
+        }
+
+
+        /* =====================================================
+           TÍTULOS DO CARD
+        ====================================================== */
+
+        .registration-step {
+            position: relative;
+            z-index: 1;
+
+            margin-bottom: 12px;
+
+            color: #9b91d8;
+
+            font-size: 12px;
+            font-weight: 650;
+
+            letter-spacing: 2.6px;
+        }
+
+        .registration-card h2 {
+            position: relative;
+            z-index: 1;
+
+            margin-bottom: 15px;
+
+            color: #f4f5f8;
+
+            font-size: 30px;
+
+            line-height: 1.2;
+
+            letter-spacing: -0.8px;
+        }
+
+        .registration-description {
+            position: relative;
+            z-index: 1;
+
+            margin-bottom: 34px;
+
+            color: #9da3b9;
+
+            font-size: 14px;
+
+            line-height: 1.75;
+        }
+
+
+        /* =====================================================
+           FORM
+        ====================================================== */
+
+        .registration-form {
+            position: relative;
+            z-index: 1;
+
+            display: flex;
+            flex-direction: column;
+
+            gap: 14px;
+        }
+
+        .registration-field label {
+            display: block;
+
+            margin-bottom: 10px;
+
+            color: #e8e9ee;
+
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .company-input-wrapper {
+            position: relative;
+        }
+
+        .company-input-icon {
+            position: absolute;
+
+            top: 50%;
+            left: 18px;
+
+            transform:
+                translateY(-50%);
+
+            color: #787f97;
+
+            font-size: 20px;
+
+            pointer-events: none;
+        }
+
+        .registration-field input {
+            width: 100%;
+            height: 60px;
+
+            padding:
+                0 18px 0 58px;
+
+            border:
+                1px solid rgba(159, 163, 209, 0.50);
+
+            border-radius: 13px;
+
+            outline: none;
+
+            background:
+                rgba(5, 7, 14, 0.55);
+
+            color: #ffffff;
+
+            font-size: 15px;
+
+            transition:
+                border-color 0.2s ease,
+                box-shadow 0.2s ease,
+                background 0.2s ease;
+        }
+
+        .registration-field input::placeholder {
+            color: #777e94;
+        }
+
+        .registration-field input:focus {
+            border-color: #8e64ff;
+
+            background:
+                rgba(15, 13, 29, 0.72);
+
+            box-shadow:
+                0 0 0 4px rgba(124, 83, 255, 0.09);
+        }
+
+
+        /* =====================================================
+           MENSAGEM JS
+        ====================================================== */
+
+        #registration-message {
+            line-height: 1.5;
+        }
+
+
+        /* =====================================================
+           BOTÃO
+        ====================================================== */
+
+        .registration-submit {
+            width: 100%;
+            height: 62px;
+
+            margin-top: 17px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+
+            border: 0;
+
+            border-radius: 13px;
+
+            background:
+                linear-gradient(90deg,
+                    #7c45ff,
+                    #593dff);
+
+            color: #ffffff;
+
+            font-size: 16px;
+            font-weight: 750;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 12px 35px rgba(104, 67, 255, 0.26);
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease,
+                opacity 0.2s ease;
+        }
+
+        .registration-submit:hover {
+            transform:
+                translateY(-1px);
+
+            box-shadow:
+                0 15px 42px rgba(104, 67, 255, 0.34);
+        }
+
+        .registration-submit:disabled {
+            cursor: not-allowed;
+
+            opacity: 0.65;
+
+            transform: none;
+        }
+
+        .registration-submit-arrow {
+            margin-left: auto;
+
+            margin-right: 4px;
+
+            font-size: 24px;
+
+            line-height: 1;
+        }
+
+
+        /* =====================================================
+           NOTA
+        ====================================================== */
+
+        .registration-note {
+            position: relative;
+            z-index: 1;
+
+            margin-top: 23px;
+
+            padding:
+                17px 18px;
+
+            display: flex;
+            align-items: flex-start;
+            gap: 13px;
+
+            border:
+                1px solid rgba(255, 255, 255, 0.055);
+
+            border-radius: 12px;
+
+            background:
+                rgba(255, 255, 255, 0.025);
+
+            color: #8990a5;
+
+            font-size: 11px;
+
+            line-height: 1.6;
+        }
+
+        .registration-note-icon {
+            flex: 0 0 auto;
+
+            width: 25px;
+            height: 25px;
+
+            display: grid;
+            place-items: center;
+
+            border:
+                1px solid rgba(121, 90, 255, 0.50);
+
+            border-radius: 50%;
+
+            color: #9a73ff;
+
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+
+        /* =====================================================
+           RODAPÉ DO CARD
+        ====================================================== */
+
+        .card-footer {
+            position: relative;
+            z-index: 1;
+
+            margin-top: 38px;
+
+            padding-top: 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            border-top:
+                1px solid rgba(255, 255, 255, 0.045);
+
+            color: #747b91;
+
+            font-size: 10px;
+        }
+
+        .card-footer-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .card-footer-line {
+            width: 38px;
+            height: 2px;
+
+            background:
+                linear-gradient(90deg,
+                    #8653ff,
+                    transparent);
+        }
+
+
+        /* =====================================================
+           RODAPÉ DA PÁGINA
+        ====================================================== */
+
+        .page-footer {
+            position: relative;
+            z-index: 2;
+
+            min-height: 95px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding:
+                0 max(35px, calc((100% - 1450px) / 2));
+
+            border-top:
+                1px solid rgba(255, 255, 255, 0.045);
+
+            color: #686f83;
+
+            font-size: 11px;
+        }
+
+        .footer-brand {
+            color: #dfe1e8;
+
+            font-size: 19px;
+            font-weight: 750;
+        }
+
+        .footer-brand span {
+            color: #8d5cff;
+        }
+
+        .footer-left {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .footer-slogan {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .footer-slogan-line {
+            width: 45px;
+            height: 2px;
+
+            background:
+                linear-gradient(90deg,
+                    transparent,
+                    #8352ff);
+        }
+
+
+        /* =====================================================
+           RESPONSIVO
+        ====================================================== */
+
+        @media (max-width: 1180px) {
+
+            .onboarding-shell {
+                grid-template-columns:
+                    1fr 470px;
+
+                gap: 45px;
+            }
+
+            .mockup-panel {
+                width: 410px;
+            }
+
+            .hero-title {
+                font-size: 58px;
+            }
+
+        }
+
+
+        @media (max-width: 980px) {
+
+            .onboarding-shell {
+                width: min(680px,
+                        calc(100% - 40px));
+
+                grid-template-columns: 1fr;
+
+                gap: 65px;
+
+                padding-top: 35px;
+            }
+
+            .brand {
+                margin-bottom: 50px;
+            }
+
+            .hero-side {
+                text-align: center;
+            }
+
+            .hero-description {
+                margin:
+                    0 auto;
+            }
+
+            .hero-badge {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .benefit-list {
+                width: fit-content;
+
+                margin:
+                    40px auto 0;
+
+                text-align: left;
+            }
+
+            .mockup-area {
+                display: none;
+            }
+
+            .trust-copy {
+                justify-content: center;
+            }
+
+            .security-info {
+                justify-content: center;
+
+                margin-bottom: 25px;
+            }
+
+            .page-footer {
+                padding:
+                    30px 25px;
+
+                flex-direction: column;
+
+                gap: 20px;
+
+                text-align: center;
+            }
+
+        }
+
+
+        @media (max-width: 620px) {
+
+            .onboarding-shell {
+                width:
+                    calc(100% - 28px);
+
+                padding-top: 22px;
+            }
+
+            .brand {
+                gap: 12px;
+
+                margin-bottom: 42px;
+            }
+
+            .brand-symbol {
+                width: 52px;
+                height: 52px;
+
+                border-radius: 14px;
+
+                font-size: 27px;
+            }
+
+            .brand-name {
+                font-size: 29px;
+            }
+
+            .brand-slogan {
+                font-size: 8px;
+
+                letter-spacing: 1.4px;
+            }
+
+            .hero-title {
+                font-size: 43px;
+
+                letter-spacing: -2px;
+            }
+
+            .hero-description {
+                font-size: 15px;
+            }
+
+            .benefit-icon {
+                width: 51px;
+                height: 51px;
+
+                font-size: 22px;
+            }
+
+            .registration-card {
+                padding:
+                    34px 22px 28px;
+
+                border-radius: 20px;
+            }
+
+            .registration-card h2 {
+                font-size: 25px;
+            }
+
+            .registration-field input {
+                height: 56px;
+            }
+
+            .registration-submit {
+                height: 58px;
+
+                font-size: 14px;
+            }
+
+            .card-footer {
+                flex-direction: column;
+
+                align-items: flex-start;
+
+                gap: 12px;
+            }
+
+            .footer-left {
+                flex-direction: column;
+
+                gap: 10px;
+            }
+
+            .footer-slogan {
+                flex-direction: column;
+
+                gap: 8px;
+            }
+
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <main class="onboarding-page">
+
+
+        <section class="onboarding-shell">
+
+
+            <!-- =====================================================
+                 LADO ESQUERDO
+            ====================================================== -->
+
+            <section class="hero-side">
+
+
+                <a href="index.html" class="brand">
+
+                    <span class="brand-symbol">
+                        A
+                    </span>
+
+
+                    <span class="brand-copy">
+
+                        <span class="brand-name">
+                            Aion<span>AI</span>
+                        </span>
+
+                        <span class="brand-slogan">
+                            Inteligência que trabalha por você
+                        </span>
+
+                    </span>
+
+                </a>
+
+
+
+                <div class="hero-badge">
+
+                    <span class="hero-badge-dot"></span>
+
+                    ÚLTIMA ETAPA
+
+                </div>
+
+
+
+                <h1 class="hero-title">
+
+                    Complete seu
+                    <br>
+
+                    <span>
+                        cadastro
+                    </span>
+
+                </h1>
+
+
+
+                <p class="hero-description">
+
+                    Informe o nome da sua empresa para preparar
+                    seu espaço na Aion AI e começar a transformar
+                    o seu atendimento.
+
+                </p>
+
+
+
+                <!-- BENEFÍCIOS -->
+
+                <div class="benefit-list">
+
+
+                    <div class="benefit-item">
+
+                        <div class="benefit-icon">
+                            ✦
+                        </div>
+
+                        <div class="benefit-text">
+
+                            <strong>
+                                IA personalizada
+                            </strong>
+
+                            <span>
+                                Treinada para o seu negócio
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="benefit-item">
+
+                        <div class="benefit-icon">
+                            ▥
+                        </div>
+
+                        <div class="benefit-text">
+
+                            <strong>
+                                Mais produtividade
+                            </strong>
+
+                            <span>
+                                Atendimento inteligente 24/7
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="benefit-item">
+
+                        <div class="benefit-icon">
+                            ◉
+                        </div>
+
+                        <div class="benefit-text">
+
+                            <strong>
+                                Crescimento real
+                            </strong>
+
+                            <span>
+                                Mais clientes e mais resultados
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- MOCKUP -->
+
+                <div class="mockup-area">
+
+
+                    <div class="mockup-panel">
+
+
+                        <div class="mockup-sidebar">
+
+                            <div class="mini-brand">
+
+                                <span>
+                                    A
+                                </span>
+
+                                AionAI
+
+                            </div>
+
+
+                            <div class="mini-nav">
+
+                                <div class="mini-nav-item">
+                                    Dashboard
+                                </div>
+
+                                <div class="mini-nav-item">
+                                    Atendimentos
+                                </div>
+
+                                <div class="mini-nav-item">
+                                    Base de conhecimento
+                                </div>
+
+                                <div class="mini-nav-item">
+                                    Configurar IA
+                                </div>
+
+                                <div class="mini-nav-item">
+                                    Histórico
+                                </div>
+
+                                <div class="mini-nav-item">
+                                    Configurações
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="mockup-content">
+
+                            <div class="mockup-hello">
+
+                                Olá! 👋
+                                <br>
+
+                                Sua IA está pronta
+                                <br>
+
+                                para trabalhar.
+
+                            </div>
+
+
+                            <div class="mockup-input">
+                                ✦ &nbsp; Como posso ajudar?
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="mockup-a">
+                        A
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="trust-copy">
+
+                    <span class="trust-line"></span>
+
+                    <span>
+                        Empresas que confiam
+                        <br>
+                        em uma nova forma de atender
+                    </span>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =====================================================
+                 LADO DIREITO
+            ====================================================== -->
+
+            <section class="form-side">
+
+
+                <div class="security-info">
+
+                    <div class="security-shield">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Seus dados estão seguros
+                        </strong>
+
+                        <span>
+                            Privacidade em primeiro lugar
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="registration-card">
+
+
+                    <div class="company-icon">
+                        ▦
+                    </div>
+
+
+
+                    <div class="registration-step">
+                        VAMOS COMEÇAR
+                    </div>
+
+
+
+                    <h2>
+                        Qual o nome da sua empresa?
+                    </h2>
+
+
+
+                    <p class="registration-description">
+
+                        Essa informação será usada para personalizar
+                        sua experiência na Aion AI. Você poderá alterá-la
+                        posteriormente nas configurações.
+
+                    </p>
+
+
+
+                    <form id="complete-registration-form" class="registration-form">
+
+
+                        <div class="registration-field">
+
+
+                            <label for="company-name">
+                                Nome da empresa
+                            </label>
+
+
+                            <div class="company-input-wrapper">
+
+
+                                <span class="company-input-icon">
+                                    ▦
+                                </span>
+
+
+                                <input type="text" id="company-name" name="company-name" placeholder="Ex.: GB Digital"
+                                    autocomplete="organization" maxlength="100" required autofocus>
+
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div id="registration-message" style="display: none;"></div>
+
+
+
+                        <button type="submit" class="registration-submit" id="complete-registration-button">
+
+                            <span id="complete-registration-button-text">
+                                Continuar para o painel
+                            </span>
+
+
+                            <span class="registration-submit-arrow">
+                                →
+                            </span>
+
+
+                        </button>
+
+
+                    </form>
+
+
+
+                    <div class="registration-note">
+
+
+                        <span class="registration-note-icon">
+                            i
+                        </span>
+
+
+                        <span>
+
+                            Você poderá alterar essas informações
+                            posteriormente nas configurações.
+
+                        </span>
+
+
+                    </div>
+
+
+
+                    <div class="card-footer">
+
+
+                        <div class="card-footer-left">
+
+                            <span class="card-footer-line"></span>
+
+                            <span>
+                                Bem-vindo à Aion AI
+                            </span>
+
+                        </div>
+
+
+                        <span>
+                            Grandes negócios começam com boas ideias.
+                        </span>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         RODAPÉ
+    ====================================================== -->
+
+    <footer class="page-footer">
+
+
+        <div class="footer-left">
+
+            <div class="footer-brand">
+                Aion<span>AI</span>
+            </div>
+
+            <span>
+                © 2026 Aion AI. Todos os direitos reservados.
+            </span>
+
+        </div>
+
+
+        <div class="footer-slogan">
+
+            <span>
+                Automatize. Atenda. Evolua.
+            </span>
+
+            <span class="footer-slogan-line"></span>
+
+        </div>
+
+
+    </footer>
+
+
+
+    <script type="module" src="../javascript/completar-cadastro.js"></script>
+
+
+</body>
+
+</html>
